@@ -1,0 +1,65 @@
+version: '2'
+
+services:
+  proxy:
+    image: local/spring-music-nginx
+    ports:
+    - 80:80
+    networks:
+    - net
+    depends_on:
+    - spring-music-1
+    - spring-music-2
+    - spring-music-3 
+    hostname: proxy
+    container_name: proxy
+
+  spring-music-1:
+    image: local/spring-music-tomcat
+    ports:
+    - 8081:8080
+    networks:
+    - net
+    depends_on:
+    - mongodb
+    hostname: spring-music-1 
+
+  spring-music-2:
+    image: local/spring-music-tomcat
+    ports:
+    - 8082:8080
+    networks:
+    - net
+    depends_on:
+    - mongodb
+    hostname: spring-music-2
+
+  spring-music-3:
+    image: local/spring-music-tomcat
+    ports:
+    - 8083:8080
+    networks:
+    - net
+    depends_on:
+    - mongodb
+    hostname: spring-music-3
+
+  mongodb:
+    image: local/spring-music-mongodb
+    ports:
+    - 27017:27017
+    networks:
+    - net
+    hostname: mongodb
+    container_name: mongodb
+    volumes:
+    - music_data:/data/db
+    - music_data:/data/configdb
+
+volumes:
+  music_data:
+    external: true
+
+networks:
+  net:
+    driver: bridge
