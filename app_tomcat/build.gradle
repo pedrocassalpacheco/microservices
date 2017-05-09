@@ -111,6 +111,9 @@ dependencies {
     tomcat (group: 'org.apache.tomcat.embed', name: 'tomcat-embed-jasper', version: tomcatVersion) {
         exclude group: 'org.eclipse.jdt.core.compiler', module: 'ecj'
     }
+    
+    // Kafka Clients
+    compile group: 'org.apache.kafka', name: 'kafka-clients', version: '0.10.2.0'
 }
 
 war {

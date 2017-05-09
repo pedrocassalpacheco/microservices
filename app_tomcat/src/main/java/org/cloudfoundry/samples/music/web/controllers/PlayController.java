@@ -1,5 +1,6 @@
 package org.cloudfoundry.samples.music.web.controllers;
 
+import java.util.Properties;
 import org.cloudfoundry.samples.music.domain.Album;
 import org.cloudfoundry.samples.music.repositories.AlbumRepository;
 import org.slf4j.Logger;
@@ -7,45 +8,51 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import javax.validation.Valid;
+
+import org.apache.kafka.clients.producer.KafkaProducer;
+import org.apache.kafka.clients.producer.Producer;
+import org.apache.kafka.clients.producer.ProducerRecord;
+import org.apache.log4j.BasicConfigurator;
+
 
 @RestController
-@RequestMapping(value = "/albums")
-public class AlbumController {
-    private static final Logger logger = LoggerFactory.getLogger(AlbumController.class);
-    private AlbumRepository repository;
+@RequestMapping(value = "/play")
+public class PlayController {
+
+    private static final Logger LOG = LoggerFactory.getLogger(PlayController.class);
+    private final AlbumRepository repository;
 
     @Autowired
-    public AlbumController(AlbumRepository repository) {
+    public PlayController(AlbumRepository repository) {
         this.repository = repository;
-    }
+        BasicConfigurator.configure();
+        org.apache.log4j.Logger.getRootLogger().setLevel(org.apache.log4j.Level.INFO);
 
-    @RequestMapping(method = RequestMethod.GET)
-    public Iterable<Album> albums() {
-        return repository.findAll();
-    }
-
-    @RequestMapping(method = RequestMethod.PUT)
-    public Album add(@RequestBody @Valid Album album) {
-        logger.info("Adding album " + album.getId());
-        return repository.save(album);
-    }
-
-    @RequestMapping(method = RequestMethod.POST)
-    public Album update(@RequestBody @Valid Album album) {
-        logger.info("Updating album " + album.getId());
-        return repository.save(album);
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public Album getById(@PathVariable String id) {
-        logger.info("Getting album " + id);
-        return repository.findOne(id);
+        LOG.info("Playing album " + id);
+        Album album = repository.findOne(id);
+        playAlbum(album);
+        return album;
     }
 
-    @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
-    public void deleteById(@PathVariable String id) {
-        logger.info("Deleting album " + id);
-        repository.delete(id);
+    private void playAlbum(Album album) {
+        Properties props;
+        props = new Properties();
+        props.put("bootstrap.servers", "spring-music-kafka:9092");
+        props.put("acks", "all");
+        props.put("retries", 0);
+        props.put("batch.size", 16384);
+        props.put("linger.ms", 1);
+        props.put("buffer.memory", 33554432);
+        props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
+        props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
+        try (Producer<String, String> producer = new KafkaProducer<>(props)) {
+            producer.send(new ProducerRecord<>("spring-music-kafka", album.getId(), album.toString()));
+        } catch (Exception ex) {
+            LOG.error("Unable to play album " + album.getId(), ex);
+        }
     }
 }

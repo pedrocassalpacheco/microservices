@@ -2,7 +2,7 @@ version: '2'
 
 services:
   proxy:
-    image: local/spring-music-nginx
+    image: pedropacheco/spring-music-nginx
     ports:
     - 80:80
     networks:
@@ -10,22 +10,22 @@ services:
     depends_on:
     - spring-music-1
     - spring-music-2
-    - spring-music-3 
-    hostname: proxy
-    container_name: proxy
+    - spring-music-3
+    hostname: spring-music-proxy
+    container_name: spring-music-proxy
 
   spring-music-1:
-    image: local/spring-music-tomcat
+    image: pedropacheco/spring-music-tomcat
     ports:
     - 8081:8080
     networks:
     - net
     depends_on:
     - mongodb
-    hostname: spring-music-1 
+    hostname: spring-music-1
 
   spring-music-2:
-    image: local/spring-music-tomcat
+    image: pedropacheco/spring-music-tomcat
     ports:
     - 8082:8080
     networks:
@@ -35,7 +35,7 @@ services:
     hostname: spring-music-2
 
   spring-music-3:
-    image: local/spring-music-tomcat
+    image: pedropacheco/spring-music-tomcat
     ports:
     - 8083:8080
     networks:
@@ -44,17 +44,101 @@ services:
     - mongodb
     hostname: spring-music-3
 
+  cart:
+    image: pedropacheco/spring-music-nginx-cart
+    ports:
+    - 81:80
+    networks:
+    - net
+    depends_on:
+    - spring-music-cart-1
+    - spring-music-cart-2
+    - spring-music-cart-3
+    hostname: spring-music-cart-proxy
+    container_name: spring-music-cart-proxy
+
+  spring-music-services-1:
+    image: pedropacheco/spring-music-services
+    ports:
+    - 8084:8081
+    networks:
+    - net
+    depends_on:
+    - mysql
+    hostname: spring-music-services
+
+  spring-music-cart-1:
+    image: pedropacheco/spring-music-cart
+    ports:
+    - 8085:8081
+    networks:
+    - net
+    depends_on:
+    - mysql
+    hostname: spring-music-cart-1
+
+  spring-music-cart-2:
+    image: pedropacheco/spring-music-cart
+    ports:
+    - 8086:8081
+    networks:
+    - net
+    depends_on:
+    - mysql
+    hostname: spring-music-cart-2
+
+
+  spring-music-cart-3:
+    image: pedropacheco/spring-music-cart
+    ports:
+    - 8087:8081
+    networks:
+    - net
+    depends_on:
+    - mysql
+    hostname: spring-music-cart-3
+
   mongodb:
-    image: local/spring-music-mongodb
+    image: pedropacheco/spring-music-mongodb
     ports:
     - 27017:27017
     networks:
     - net
-    hostname: mongodb
-    container_name: mongodb
+    hostname: spring-music-mongodb
+    container_name: spring-music-mongodb
     volumes:
     - music_data:/data/db
     - music_data:/data/configdb
+
+  mysql:
+    image: pedropacheco/spring-music-mysql
+    ports:
+    - 3306:3306
+    networks:
+    - net
+    hostname: spring-music-mysql
+    container_name: spring-music-mysql
+    restart: always
+    environment:
+      #- reschedule:on-node-failure
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_ALLOW_EMPTY_PASSWORD=true
+      - MYSQL_DATABASE=socksdb
+
+  kafka:
+    image: pedropacheco/spring-music-kafka
+    ports:
+      - "2181:2181"
+      - "9092:9002"
+    networks:
+      - net
+    hostname: spring-music-kafka
+    container_name: spring-music-kafka
+    environment:
+      ADVERTISED_HOST_NAME: spring-music-kafka
+      ADVERTISED_PORT: 9092
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
 
 volumes:
   music_data:

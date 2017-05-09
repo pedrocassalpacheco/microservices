@@ -1,3 +1,5 @@
+/* global angular */
+
 angular.module('albums', ['ngResource', 'ui.bootstrap']).
     factory('Albums', function ($resource) {
         return $resource('albums');
@@ -5,6 +7,9 @@ angular.module('albums', ['ngResource', 'ui.bootstrap']).
     factory('Album', function ($resource) {
         return $resource('albums/:id', {id: '@id'});
     }).
+    factory('Play', function ($resource) {      
+        return $resource('play/:id', {id: '@id'});
+    }). 
     factory("EditorStatus", function () {
         var editorEnabled = {};
 
@@ -27,7 +32,7 @@ angular.module('albums', ['ngResource', 'ui.bootstrap']).
         }
     });
 
-function AlbumsController($scope, $modal, Albums, Album, Status) {
+function AlbumsController($scope, $modal, Albums, Album, Play, Status) {
     function list() {
         $scope.albums = Albums.query();
     }
@@ -44,6 +49,18 @@ function AlbumsController($scope, $modal, Albums, Album, Status) {
             },
             function (result) {
                 Status.error("Error saving album: " + result.status);
+            }
+        );
+    }
+    
+    function playAlbum(album) {
+        Play.play(album,
+         function () {
+                Status.success("Playing album");
+                list();
+            },
+            function (result) {
+                Status.error("Error playing album: " + result.status);
             }
         );
     }
@@ -90,6 +107,18 @@ function AlbumsController($scope, $modal, Albums, Album, Status) {
         Album.delete({id: album.id},
             function () {
                 Status.success("Album deleted");
+                list();
+            },
+            function (result) {
+                Status.error("Error deleting album: " + result.status);
+            }
+        );
+    };
+    
+     $scope.playAlbum = function (album) {
+         Play.get({id: album.id},
+            function () {
+                Status.success("Playing album");
                 list();
             },
             function (result) {

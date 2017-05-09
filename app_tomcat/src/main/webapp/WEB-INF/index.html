@@ -6,7 +6,7 @@
         <meta name="title" content="Music"/>
         <link rel="shortcut icon" href="assets/favicon.ico"/>
         <title>Music</title>
-
+        <script src = "js/faker.js" type = "text/javascript"></script>
         <link rel="stylesheet" type="text/css" href="webjars/bootstrap/3.3.7-1/css/bootstrap.css"/>
         <link rel="stylesheet" type="text/css" href="assets/css/app.css"/>
         <link rel="stylesheet" type="text/css" href="assets/css/multi-columns-row.css"/>
@@ -24,7 +24,8 @@
                 m.parentNode.insertBefore(a, m)
             })(window, document, 'script', '//eum.instana.io/eum.min.js', 'ineum');
 
-            ineum('apiKey', 'PfPWFbuWRR25uouAGO5MBA');
+            ineum('apiKey', 'uWhGrcmqSUGkT_LZFlmmIQ');
+
 
             // Backend trace ID to facilitate correlation of frontend/backend traces.
             // Trace ID is available in backend to user code.
@@ -32,7 +33,9 @@
             // ineum('traceId', '<backend trace id>');
 
             // free form key/value pairs for advanced end-user tracking
-            // ineum('meta', 'user', 'tom.mason@example.com');
+            faker.seed(15);
+            var randomEmail = faker.internet.email(); // Rusty@arne.info
+            ineum('meta', 'user', randomEmail);
         </script>
     </head>
 

@@ -1,0 +1,36 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: streams
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: streams
+    spec:
+      containers:
+      - env:
+        - name: ADVERTISED_PORT
+          value: "9092"
+        - name: ADVERTISED_HOST_NAME
+          value: streams
+        image: local/spring-music-zookeeperkafka
+        name: streams
+        ports:
+        - containerPort: 2181
+        - containerPort: 9002
+        resources: {}
+        volumeMounts:
+        - mountPath: /var/run/docker.sock
+          name: streams-claim0
+      restartPolicy: Always
+      volumes:
+      - name: streams-claim0
+        persistentVolumeClaim:
+          claimName: streams-claim0
+status: {}

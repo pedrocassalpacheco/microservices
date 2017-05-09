@@ -1,0 +1,28 @@
+language: node_js
+
+sudo: required
+
+node_js:
+  - "0.10.32"
+
+services:
+  - docker
+
+before_install:
+  - sudo apt-get install -y make
+  - make test-image deps
+
+env:
+  - GROUP=quay.io/luke2 COMMIT=$TRAVIS_COMMIT TAG=$TRAVIS_TAG REPO=front-end;
+
+script:
+  - make test
+
+after_success:
+  - set -e
+  - if [ -z "$DOCKER_PASS" ]; then echo "Build triggered by external PR. Skipping docker push" && exit 0; fi
+  - docker login quay.io -u $DOCKER_USER -p $DOCKER_PASS;
+  - ./scripts/build.sh
+  - ./test/container.sh
+  - ./scripts/push.sh
+

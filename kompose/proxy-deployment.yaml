@@ -1,0 +1,22 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: proxy
+spec:
+  replicas: 1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: proxy
+    spec:
+      containers:
+      - image: local/spring-music-nginx
+        name: proxy
+        ports:
+        - containerPort: 80
+        resources: {}
+      restartPolicy: Always
+status: {}

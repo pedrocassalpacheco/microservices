@@ -1,0 +1,71 @@
+2017/05/08 19:48:44 INFO  - jmeter.util.JMeterUtils: Setting Locale to en_US 
+2017/05/08 19:48:44 INFO  - jmeter.JMeter: Loading user properties from: /opt/apache-jmeter-3.1/bin/user.properties 
+2017/05/08 19:48:44 INFO  - jmeter.JMeter: Loading system properties from: /opt/apache-jmeter-3.1/bin/system.properties 
+2017/05/08 19:48:44 INFO  - jmeter.JMeter: Copyright (c) 1998-2016 The Apache Software Foundation 
+2017/05/08 19:48:44 INFO  - jmeter.JMeter: Version 3.1 r1770033 
+2017/05/08 19:48:44 INFO  - jmeter.JMeter: java.version=1.8.0_131 
+2017/05/08 19:48:44 INFO  - jmeter.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM 
+2017/05/08 19:48:44 INFO  - jmeter.JMeter: os.name=Linux 
+2017/05/08 19:48:44 INFO  - jmeter.JMeter: os.arch=amd64 
+2017/05/08 19:48:44 INFO  - jmeter.JMeter: os.version=3.10.0-514.16.1.el7.x86_64 
+2017/05/08 19:48:44 INFO  - jmeter.JMeter: file.encoding=UTF-8 
+2017/05/08 19:48:44 INFO  - jmeter.JMeter: Max memory     =518979584 
+2017/05/08 19:48:44 INFO  - jmeter.JMeter: Available Processors =1 
+2017/05/08 19:48:45 INFO  - jmeter.JMeter: Default Locale=English (United States) 
+2017/05/08 19:48:45 INFO  - jmeter.JMeter: JMeter  Locale=English (United States) 
+2017/05/08 19:48:45 INFO  - jmeter.JMeter: JMeterHome=/opt/apache-jmeter-3.1 
+2017/05/08 19:48:45 INFO  - jmeter.JMeter: user.dir  =/mnt/hgfs/projects/SpringMusic 
+2017/05/08 19:48:45 INFO  - jmeter.JMeter: PWD       =/mnt/hgfs/projects/SpringMusic 
+2017/05/08 19:48:46 INFO  - jmeter.JMeter: IP: 192.168.181.146 Name: dev0 FullName: dev0 
+2017/05/08 19:48:46 INFO  - jmeter.services.FileServer: Default base='/mnt/hgfs/projects/SpringMusic' 
+2017/05/08 19:48:46 INFO  - jmeter.services.FileServer: Set new base='/mnt/hgfs/projects/SpringMusic/load' 
+2017/05/08 19:48:48 INFO  - jmeter.save.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2 
+2017/05/08 19:48:48 INFO  - jmeter.save.SaveService: Using SaveService properties file encoding UTF-8 
+2017/05/08 19:48:48 INFO  - jmeter.save.SaveService: Using SaveService properties version 3.1 
+2017/05/08 19:48:48 INFO  - jmeter.save.SaveService: All converter versions present and correct 
+2017/05/08 19:48:48 INFO  - jmeter.save.SaveService: Loading file: load/load.jmx 
+2017/05/08 19:48:48 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2017/05/08 19:48:48 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2017/05/08 19:48:48 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2017/05/08 19:48:48 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2017/05/08 19:48:48 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser 
+2017/05/08 19:48:48 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser 
+2017/05/08 19:48:49 INFO  - jmeter.JMeter: Creating summariser <summary> 
+2017/05/08 19:48:49 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2017/05/08 19:48:49 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2017/05/08 19:48:49 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2017/05/08 19:48:49 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must contain the string: '.functions.' 
+2017/05/08 19:48:49 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must not contain the string: '.gui.' 
+2017/05/08 19:48:50 INFO  - jmeter.JMeter: Running test (1494294530815) 
+2017/05/08 19:48:50 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group 
+2017/05/08 19:48:50 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Thread Group. 
+2017/05/08 19:48:50 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2017/05/08 19:48:50 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 10 perThread 10000.0 delayedStart=false 
+2017/05/08 19:48:51 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2017/05/08 19:48:51 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2017/05/08 19:48:51 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-1 
+2017/05/08 19:48:51 INFO  - jmeter.protocol.http.sampler.HTTPHCAbstractImpl: Local host = dev0 
+2017/05/08 19:48:51 INFO  - jmeter.protocol.http.sampler.HTTPHC4Impl: HTTP request retry count = 0 
+2017/05/08 19:48:51 INFO  - jmeter.samplers.SampleResult: Note: Sample TimeStamps are START times 
+2017/05/08 19:48:51 INFO  - jmeter.samplers.SampleResult: sampleresult.default.encoding is set to ISO-8859-1 
+2017/05/08 19:48:51 INFO  - jmeter.samplers.SampleResult: sampleresult.useNanoTime=true 
+2017/05/08 19:48:51 INFO  - jmeter.samplers.SampleResult: sampleresult.nanoThreadSleep=5000 
+2017/05/08 19:49:00 INFO  - jmeter.reporters.Summariser: summary +    535 in 00:00:09 =   58.2/s Avg:    15 Min:     1 Max:   863 Err:   134 (25.05%) Active: 1 Started: 1 Finished: 0 
+2017/05/08 19:50:00 INFO  - jmeter.reporters.Summariser: summary +    486 in 00:01:00 =    8.1/s Avg:   123 Min:     2 Max: 36163 Err:    40 (8.23%) Active: 1 Started: 1 Finished: 0 
+2017/05/08 19:50:00 INFO  - jmeter.reporters.Summariser: summary =   1021 in 00:01:09 =   14.8/s Avg:    66 Min:     1 Max: 36163 Err:   174 (17.04%) 
+2017/05/08 19:50:30 INFO  - jmeter.reporters.Summariser: summary +   1283 in 00:00:30 =   42.8/s Avg:    23 Min:     4 Max:   411 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0 
+2017/05/08 19:50:30 INFO  - jmeter.reporters.Summariser: summary =   2304 in 00:01:39 =   23.2/s Avg:    42 Min:     1 Max: 36163 Err:   174 (7.55%) 
+2017/05/08 19:51:00 INFO  - jmeter.reporters.Summariser: summary +    943 in 00:00:30 =   31.4/s Avg:    31 Min:     5 Max:   668 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0 
+2017/05/08 19:51:00 INFO  - jmeter.reporters.Summariser: summary =   3247 in 00:02:09 =   25.1/s Avg:    39 Min:     1 Max: 36163 Err:   174 (5.36%) 
+2017/05/08 19:51:30 INFO  - jmeter.reporters.Summariser: summary +   1255 in 00:00:30 =   41.9/s Avg:    23 Min:     4 Max:   192 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0 
+2017/05/08 19:51:30 INFO  - jmeter.reporters.Summariser: summary =   4502 in 00:02:39 =   28.3/s Avg:    35 Min:     1 Max: 36163 Err:   174 (3.86%) 
+2017/05/08 19:52:00 INFO  - jmeter.reporters.Summariser: summary +   1804 in 00:00:30 =   60.1/s Avg:    16 Min:     3 Max:   138 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0 
+2017/05/08 19:52:00 INFO  - jmeter.reporters.Summariser: summary =   6306 in 00:03:09 =   33.3/s Avg:    29 Min:     1 Max: 36163 Err:   174 (2.76%) 
+2017/05/08 19:52:30 INFO  - jmeter.reporters.Summariser: summary +   1567 in 00:00:30 =   52.2/s Avg:    19 Min:     3 Max:   747 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0 
+2017/05/08 19:52:30 INFO  - jmeter.reporters.Summariser: summary =   7873 in 00:03:39 =   35.9/s Avg:    27 Min:     1 Max: 36163 Err:   174 (2.21%) 
+2017/05/08 19:53:00 INFO  - jmeter.reporters.Summariser: summary +   1390 in 00:00:30 =   46.3/s Avg:    21 Min:     3 Max:   642 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0 
+2017/05/08 19:53:00 INFO  - jmeter.reporters.Summariser: summary =   9263 in 00:04:09 =   37.2/s Avg:    26 Min:     1 Max: 36163 Err:   174 (1.88%) 
+2017/05/08 19:53:30 INFO  - jmeter.reporters.Summariser: summary +    810 in 00:00:30 =   27.0/s Avg:    36 Min:     3 Max:   256 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0 
+2017/05/08 19:53:30 INFO  - jmeter.reporters.Summariser: summary =  10073 in 00:04:39 =   36.1/s Avg:    27 Min:     1 Max: 36163 Err:   174 (1.73%) 
+2017/05/08 19:53:55 INFO  - jmeter.reporters.ResultCollector: Shutdown hook started 
+2017/05/08 19:53:55 INFO  - jmeter.reporters.ResultCollector: Shutdown hook ended 
