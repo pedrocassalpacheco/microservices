@@ -1,17 +1,13 @@
 var instana = require('instana-nodejs-sensor')();
 var express = require('express');
-var express_connection = require('express-myconnection');
-var mysql = require('mysql');
+var connection = require('express-myconnection');
 var app = express();
 var srs = require('secure-random-string');
-var http = require('http');
-
-/*
 var kafka = require('kafka-node'),
             client = new kafka.Client('spring-music-kafka:9092'),
             producer = new kafka.Producer(client);
-*/
-/*function produceMessage() {
+
+function produceMessage() {
   payloads = [
           { topic: 'test', messages: 'This is the First Message I am sending', partition: 0 },
       ];
@@ -28,41 +24,6 @@ var kafka = require('kafka-node'),
   });
 
 }
-*/
-
-function remote_call() {
-  var options = {
-    host: 'spring-music-proxy',
-    port: '88',
-    path: 'index.html'
-  };
-
-  callback = function(response) {
-    var str = '';
-
-    response.on('data', function (chunk) {
-      str += chunk;
-    });
-
-    request.on('error', function(err) {
-      console.log(str);
-      return false;
-    });
-
-    response.on('end', function () {
-      console.log(str);
-    });
-  }
-
-  try {
-    http.request(options, callback).end();
-  } catch (err) {
-    console.log(err);
-    return false;
-  } finally {
-    return true;
-  }
-}
 
 // Home Page
 app.get('/', function (req, res) {
@@ -70,7 +31,7 @@ app.get('/', function (req, res) {
   console.log("Got a GET request for the homepage");
 
   var connection = mysql.createConnection({
-      host: 'spring-music-mysql',
+      host: 'mysql',
       user: 'root',
       password: '',
       requestTimeout: 50,
@@ -92,7 +53,7 @@ app.get('/', function (req, res) {
             res.status(200).send("ok");
         }
 
-        //produceMessage();
+        produceMessage();
 
         connection.end();
 
@@ -102,10 +63,10 @@ app.get('/', function (req, res) {
 });
 
 app.get('/addtocart', function (req, res) {
-    console.log("Got a GET request for /addtocart");
+    console.log("Got a GET request for /list_user");
 
     var connection = mysql.createConnection({
-        host: 'spring-music-mysql',
+        host: 'mysql',
         user: 'root',
         password: '',
         requestTimeout: 50,
@@ -114,66 +75,20 @@ app.get('/addtocart', function (req, res) {
         database: 'socksdb'
     });
 
-    var pst  = {name: req.param('p')};
-    console.log(req.param('p'));
-    var query = connection.query("INSERT INTO cart set ? ", pst, function (err, results) {
-
-        if (err) {
-            console.log(err);
-            res.status(500).send(err);
-        } else {
-            console.log(results);
-            res.status(200).send("ok");
-        }
-
-        //produceMessage();
-
-    });
-
-      connection.end();
-
-})
-
-app.get('/paymentgateway', function (req, res) {
-    console.log("Got a GET request for /micropayment");
-
-    var connection = mysql.createConnection({
-        host: 'spring-music-mysql',
-        user: 'root',
-        password: '',
-        requestTimeout: 50,
-        acquireTimeout: 100,
-        port: 3306,
-        database: 'socksdb'
-    });
-
-    var sql = "select * from cart;"
-    connection.query(sql, {}, function (err, results) {
-
-        if (err) {
-            console.log(err);
-            res.status(500).send(err);
-            return;
-        }
-
-        console.log(results);
-    });
-
-    var sql = "truncate cart;"
+    var sql = "select * from tag;"
     connection.query(sql, {}, function (err, results) {
 
         if (err) {
             res.status(500).send(err);
-            return;
         }
         console.log(results);
+        res.status(200).send("ok");
 
-    });
+
+    })
+
 
     connection.end();
-
-    res.status(200).send("ok");
-
 })
 
 var server = app.listen(8080, function () {

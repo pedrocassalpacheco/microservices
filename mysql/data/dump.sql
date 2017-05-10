@@ -3,27 +3,33 @@ CREATE USER IF NOT EXISTS 'catalogue_user' IDENTIFIED BY 'default_password';
 GRANT ALL ON socksdb.* TO 'catalogue_user';
 
 CREATE TABLE IF NOT EXISTS sock (
-	sock_id varchar(40) NOT NULL, 
-	name varchar(20), 
-	description varchar(200), 
-	price float, 
-	count int, 
-	image_url_1 varchar(40), 
-	image_url_2 varchar(40), 
+	sock_id varchar(40) NOT NULL,
+	name varchar(20),
+	description varchar(200),
+	price float,
+	count int,
+	image_url_1 varchar(40),
+	image_url_2 varchar(40),
 	PRIMARY KEY(sock_id)
 );
 
 CREATE TABLE IF NOT EXISTS tag (
-	tag_id MEDIUMINT NOT NULL AUTO_INCREMENT, 
-	name varchar(20), 
+	tag_id MEDIUMINT NOT NULL AUTO_INCREMENT,
+	name varchar(20),
+	PRIMARY KEY(tag_id)
+);
+
+CREATE TABLE IF NOT EXISTS cart (
+	tag_id MEDIUMINT NOT NULL AUTO_INCREMENT,
+	name varchar(60),
 	PRIMARY KEY(tag_id)
 );
 
 CREATE TABLE IF NOT EXISTS sock_tag (
-	sock_id varchar(40), 
-	tag_id MEDIUMINT NOT NULL, 
-	FOREIGN KEY (sock_id) 
-		REFERENCES sock(sock_id), 
+	sock_id varchar(40),
+	tag_id MEDIUMINT NOT NULL,
+	FOREIGN KEY (sock_id)
+		REFERENCES sock(sock_id),
 	FOREIGN KEY(tag_id)
 		REFERENCES tag(tag_id)
 );
@@ -73,7 +79,3 @@ INSERT INTO sock_tag VALUES ("3395a43e-2d88-40de-b95f-e00e1502085b", "4");
 INSERT INTO sock_tag VALUES ("837ab141-399e-4c1f-9abc-bace40296bac", "1");
 INSERT INTO sock_tag VALUES ("837ab141-399e-4c1f-9abc-bace40296bac", "11");
 INSERT INTO sock_tag VALUES ("837ab141-399e-4c1f-9abc-bace40296bac", "3");
-
-
-
-

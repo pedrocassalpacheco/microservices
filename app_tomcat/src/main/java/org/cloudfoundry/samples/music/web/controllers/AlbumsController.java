@@ -47,33 +47,7 @@ public class AlbumsController {
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public Album getById(@PathVariable String id) throws MalformedURLException, IOException {
-        logger.info("Getting album " + id);
-
-        String url = "http://cart?p=" + id;
-
-        URL obj = new URL(url);
-        HttpURLConnection con = (HttpURLConnection) obj.openConnection();
-
-        // optional default is GET
-        con.setRequestMethod("GET");
-
-        //add request header
-        con.setRequestProperty("User-Agent", USER_AGENT);
-
-        int responseCode = con.getResponseCode();
-        System.out.println("\nSending 'GET' request to URL : " + url);
-        System.out.println("Response Code : " + responseCode);
-
-        try (BufferedReader in = new BufferedReader(
-                new InputStreamReader(con.getInputStream()))) {
-            String inputLine;
-            StringBuilder response = new StringBuilder();
-
-            while ((inputLine = in.readLine()) != null) {
-                response.append(inputLine);
-            }
-        }
-
+        logger.info("Getting album " + id);       
         return repository.findOne(id);
     }
 

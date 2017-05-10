@@ -9,6 +9,7 @@ WORKDIR /usr/src/app
 COPY server.js /usr/src/app
 COPY package.json /usr/src/app
 RUN npm install
+RUN npm install --save git://github.com/instana/nodejs-sensor.git#mysql-instrumentation
 EXPOSE 8080
 
 # Start the app

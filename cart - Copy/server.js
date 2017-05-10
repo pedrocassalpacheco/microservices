@@ -1,9 +1,11 @@
 var instana = require('instana-nodejs-sensor')();
 var express = require('express');
 var connection = require('express-myconnection');
+var mysql = require('mysql');
 var app = express();
 var srs = require('secure-random-string');
-/*var kafka = require('kafka-node'),
+/*
+var kafka = require('kafka-node'),
             client = new kafka.Client('spring-music-kafka:9092'),
             producer = new kafka.Producer(client);
 */
@@ -30,8 +32,8 @@ app.get('/', function (req, res) {
 
   console.log("Got a GET request for the homepage");
 
-  var connection = mysql.createConnection({
-      host: 'mysql',
+  var conn = connection.createConnection({
+      host: 'spring-music-mysql',
       user: 'root',
       password: '',
       requestTimeout: 50,
@@ -43,7 +45,7 @@ app.get('/', function (req, res) {
   srs({length: 20}, function(err, sr) {
     console.log(sr);
     var pst  = {name: sr};
-    var query = connection.query("INSERT INTO tag set ? ", pst, function (err, results) {
+    var query = conn.query("INSERT INTO tag set ? ", pst, function (err, results) {
 
         if (err) {
             console.log(err);
@@ -53,7 +55,7 @@ app.get('/', function (req, res) {
             res.status(200).send("ok");
         }
 
-        produceMessage();
+        //produceMessage();
 
         connection.end();
 
@@ -63,10 +65,10 @@ app.get('/', function (req, res) {
 });
 
 app.get('/addtocart', function (req, res) {
-    console.log("Got a GET request for /list_user");
+    console.log("Got a GET request for /addtocart");
 
-    var connection = mysql.createConnection({
-        host: 'mysql',
+    var conn = connection.createConnection({
+        host: 'spring-music-mysql',
         user: 'root',
         password: '',
         requestTimeout: 50,
@@ -76,15 +78,13 @@ app.get('/addtocart', function (req, res) {
     });
 
     var sql = "select * from tag;"
-    connection.query(sql, {}, function (err, results) {
+    conn.query(sql, {}, function (err, results) {
 
         if (err) {
             res.status(500).send(err);
         }
         console.log(results);
         res.status(200).send("ok");
-
-
     })
 
 

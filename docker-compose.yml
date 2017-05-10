@@ -5,6 +5,7 @@ services:
     image: pedropacheco/spring-music-nginx
     ports:
     - 80:80
+    - 88:88
     networks:
     - net
     depends_on:
@@ -57,20 +58,10 @@ services:
     hostname: spring-music-cart-proxy
     container_name: spring-music-cart-proxy
 
-  spring-music-services-1:
-    image: pedropacheco/spring-music-services
-    ports:
-    - 8084:8081
-    networks:
-    - net
-    depends_on:
-    - mysql
-    hostname: spring-music-services
-
   spring-music-cart-1:
     image: pedropacheco/spring-music-cart
     ports:
-    - 8085:8081
+    - 8085:8080
     networks:
     - net
     depends_on:
@@ -80,7 +71,7 @@ services:
   spring-music-cart-2:
     image: pedropacheco/spring-music-cart
     ports:
-    - 8086:8081
+    - 8086:8080
     networks:
     - net
     depends_on:
@@ -91,7 +82,7 @@ services:
   spring-music-cart-3:
     image: pedropacheco/spring-music-cart
     ports:
-    - 8087:8081
+    - 8087:8080
     networks:
     - net
     depends_on:

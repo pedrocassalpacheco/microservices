@@ -5,11 +5,10 @@
   "private": true,
   "main": "server.js",
   "dependencies": {
-     "express":"4.15.0",
-     "mysql":"2.13.0",
-     "express-myconnection":"1.0.4",
-     "instana-nodejs-sensor":"*",
-     "secure-random-string":"*",
-     "kafka-node":"*"
+    "express": "4.15.0",
+    "express-myconnection": "1.0.4",
+    "instana-nodejs-sensor": "1.25.0",
+    "mysql": "2.13.0",
+    "secure-random-string": "1.0.0"
   }
 }

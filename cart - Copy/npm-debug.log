@@ -1,0 +1,1719 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'D:\\apps\\nodejs\\node.exe',
+1 verbose cli   'D:\\apps\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@3.10.8
+3 info using node@v6.9.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData express
+20 silly mapToRegistry name express
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry data Result {
+23 silly mapToRegistry   raw: 'express',
+23 silly mapToRegistry   scope: null,
+23 silly mapToRegistry   escapedName: 'express',
+23 silly mapToRegistry   name: 'express',
+23 silly mapToRegistry   rawSpec: '',
+23 silly mapToRegistry   spec: 'latest',
+23 silly mapToRegistry   type: 'tag' }
+24 silly mapToRegistry uri https://registry.npmjs.org/express
+25 silly fetchNamedPackageData mysql
+26 silly mapToRegistry name mysql
+27 silly mapToRegistry using default registry
+28 silly mapToRegistry registry https://registry.npmjs.org/
+29 silly mapToRegistry data Result {
+29 silly mapToRegistry   raw: 'mysql',
+29 silly mapToRegistry   scope: null,
+29 silly mapToRegistry   escapedName: 'mysql',
+29 silly mapToRegistry   name: 'mysql',
+29 silly mapToRegistry   rawSpec: '',
+29 silly mapToRegistry   spec: 'latest',
+29 silly mapToRegistry   type: 'tag' }
+30 silly mapToRegistry uri https://registry.npmjs.org/mysql
+31 silly fetchNamedPackageData express-myconnection
+32 silly mapToRegistry name express-myconnection
+33 silly mapToRegistry using default registry
+34 silly mapToRegistry registry https://registry.npmjs.org/
+35 silly mapToRegistry data Result {
+35 silly mapToRegistry   raw: 'express-myconnection',
+35 silly mapToRegistry   scope: null,
+35 silly mapToRegistry   escapedName: 'express-myconnection',
+35 silly mapToRegistry   name: 'express-myconnection',
+35 silly mapToRegistry   rawSpec: '',
+35 silly mapToRegistry   spec: 'latest',
+35 silly mapToRegistry   type: 'tag' }
+36 silly mapToRegistry uri https://registry.npmjs.org/express-myconnection
+37 silly fetchNamedPackageData secure-random-string
+38 silly mapToRegistry name secure-random-string
+39 silly mapToRegistry using default registry
+40 silly mapToRegistry registry https://registry.npmjs.org/
+41 silly mapToRegistry data Result {
+41 silly mapToRegistry   raw: 'secure-random-string',
+41 silly mapToRegistry   scope: null,
+41 silly mapToRegistry   escapedName: 'secure-random-string',
+41 silly mapToRegistry   name: 'secure-random-string',
+41 silly mapToRegistry   rawSpec: '',
+41 silly mapToRegistry   spec: 'latest',
+41 silly mapToRegistry   type: 'tag' }
+42 silly mapToRegistry uri https://registry.npmjs.org/secure-random-string
+43 verbose request uri https://registry.npmjs.org/express
+44 verbose request no auth needed
+45 info attempt registry request try #1 at 11:54:12 AM
+46 verbose request id 7ea0dd8d6e90a813
+47 http request GET https://registry.npmjs.org/express
+48 verbose request uri https://registry.npmjs.org/mysql
+49 verbose request no auth needed
+50 info attempt registry request try #1 at 11:54:12 AM
+51 http request GET https://registry.npmjs.org/mysql
+52 verbose request uri https://registry.npmjs.org/express-myconnection
+53 verbose request no auth needed
+54 info attempt registry request try #1 at 11:54:12 AM
+55 http request GET https://registry.npmjs.org/express-myconnection
+56 verbose request uri https://registry.npmjs.org/secure-random-string
+57 verbose request no auth needed
+58 info attempt registry request try #1 at 11:54:12 AM
+59 http request GET https://registry.npmjs.org/secure-random-string
+60 http 200 https://registry.npmjs.org/secure-random-string
+61 verbose headers { server: 'nginx/1.10.1',
+61 verbose headers   'content-type': 'application/json',
+61 verbose headers   'last-modified': 'Thu, 27 Aug 2015 21:53:30 GMT',
+61 verbose headers   etag: 'W/"55df86da-13ef"',
+61 verbose headers   'content-encoding': 'gzip',
+61 verbose headers   'cache-control': 'max-age=300',
+61 verbose headers   'content-length': '1431',
+61 verbose headers   'accept-ranges': 'bytes',
+61 verbose headers   date: 'Tue, 09 May 2017 17:54:12 GMT',
+61 verbose headers   via: '1.1 varnish',
+61 verbose headers   age: '264',
+61 verbose headers   connection: 'keep-alive',
+61 verbose headers   'x-served-by': 'cache-den6025-DEN',
+61 verbose headers   'x-cache': 'HIT',
+61 verbose headers   'x-cache-hits': '2',
+61 verbose headers   'x-timer': 'S1494352453.984206,VS0,VE0',
+61 verbose headers   vary: 'Accept-Encoding' }
+62 silly get cb [ 200,
+62 silly get   { server: 'nginx/1.10.1',
+62 silly get     'content-type': 'application/json',
+62 silly get     'last-modified': 'Thu, 27 Aug 2015 21:53:30 GMT',
+62 silly get     etag: 'W/"55df86da-13ef"',
+62 silly get     'content-encoding': 'gzip',
+62 silly get     'cache-control': 'max-age=300',
+62 silly get     'content-length': '1431',
+62 silly get     'accept-ranges': 'bytes',
+62 silly get     date: 'Tue, 09 May 2017 17:54:12 GMT',
+62 silly get     via: '1.1 varnish',
+62 silly get     age: '264',
+62 silly get     connection: 'keep-alive',
+62 silly get     'x-served-by': 'cache-den6025-DEN',
+62 silly get     'x-cache': 'HIT',
+62 silly get     'x-cache-hits': '2',
+62 silly get     'x-timer': 'S1494352453.984206,VS0,VE0',
+62 silly get     vary: 'Accept-Encoding' } ]
+63 verbose get saving secure-random-string to C:\Users\root\AppData\Roaming\npm-cache\registry.npmjs.org\secure-random-string\.cache.json
+64 verbose correctMkdir C:\Users\root\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+65 http 200 https://registry.npmjs.org/express-myconnection
+66 verbose headers { server: 'nginx/1.10.1',
+66 verbose headers   'content-type': 'application/json',
+66 verbose headers   'last-modified': 'Wed, 15 Mar 2017 06:07:52 GMT',
+66 verbose headers   etag: 'W/"58c8da38-1cce"',
+66 verbose headers   'content-encoding': 'gzip',
+66 verbose headers   'cache-control': 'max-age=300',
+66 verbose headers   'content-length': '1884',
+66 verbose headers   'accept-ranges': 'bytes',
+66 verbose headers   date: 'Tue, 09 May 2017 17:54:12 GMT',
+66 verbose headers   via: '1.1 varnish',
+66 verbose headers   age: '264',
+66 verbose headers   connection: 'keep-alive',
+66 verbose headers   'x-served-by': 'cache-den6021-DEN',
+66 verbose headers   'x-cache': 'HIT',
+66 verbose headers   'x-cache-hits': '1',
+66 verbose headers   'x-timer': 'S1494352453.986007,VS0,VE0',
+66 verbose headers   vary: 'Accept-Encoding' }
+67 silly get cb [ 200,
+67 silly get   { server: 'nginx/1.10.1',
+67 silly get     'content-type': 'application/json',
+67 silly get     'last-modified': 'Wed, 15 Mar 2017 06:07:52 GMT',
+67 silly get     etag: 'W/"58c8da38-1cce"',
+67 silly get     'content-encoding': 'gzip',
+67 silly get     'cache-control': 'max-age=300',
+67 silly get     'content-length': '1884',
+67 silly get     'accept-ranges': 'bytes',
+67 silly get     date: 'Tue, 09 May 2017 17:54:12 GMT',
+67 silly get     via: '1.1 varnish',
+67 silly get     age: '264',
+67 silly get     connection: 'keep-alive',
+67 silly get     'x-served-by': 'cache-den6021-DEN',
+67 silly get     'x-cache': 'HIT',
+67 silly get     'x-cache-hits': '1',
+67 silly get     'x-timer': 'S1494352453.986007,VS0,VE0',
+67 silly get     vary: 'Accept-Encoding' } ]
+68 verbose get saving express-myconnection to C:\Users\root\AppData\Roaming\npm-cache\registry.npmjs.org\express-myconnection\.cache.json
+69 verbose correctMkdir C:\Users\root\AppData\Roaming\npm-cache correctMkdir already in flight; waiting
+70 verbose makeDirectory C:\Users\root\AppData\Roaming\npm-cache creation not in flight; initializing
+71 verbose makeCacheDir UID & GID are irrelevant on win32
+72 http 200 https://registry.npmjs.org/mysql
+73 verbose headers { server: 'nginx/1.10.1',
+73 verbose headers   'content-type': 'application/json',
+73 verbose headers   'last-modified': 'Mon, 08 May 2017 16:23:15 GMT',
+73 verbose headers   etag: 'W/"59109b73-21fb9"',
+73 verbose headers   'content-encoding': 'gzip',
+73 verbose headers   'cache-control': 'max-age=300',
+73 verbose headers   'content-length': '26736',
+73 verbose headers   'accept-ranges': 'bytes',
+73 verbose headers   date: 'Tue, 09 May 2017 17:54:12 GMT',
+73 verbose headers   via: '1.1 varnish',
+73 verbose headers   age: '146',
+73 verbose headers   connection: 'keep-alive',
+73 verbose headers   'x-served-by': 'cache-den6021-DEN',
+73 verbose headers   'x-cache': 'HIT',
+73 verbose headers   'x-cache-hits': '2',
+73 verbose headers   'x-timer': 'S1494352453.984214,VS0,VE0',
+73 verbose headers   vary: 'Accept-Encoding' }
+74 silly get cb [ 200,
+74 silly get   { server: 'nginx/1.10.1',
+74 silly get     'content-type': 'application/json',
+74 silly get     'last-modified': 'Mon, 08 May 2017 16:23:15 GMT',
+74 silly get     etag: 'W/"59109b73-21fb9"',
+74 silly get     'content-encoding': 'gzip',
+74 silly get     'cache-control': 'max-age=300',
+74 silly get     'content-length': '26736',
+74 silly get     'accept-ranges': 'bytes',
+74 silly get     date: 'Tue, 09 May 2017 17:54:12 GMT',
+74 silly get     via: '1.1 varnish',
+74 silly get     age: '146',
+74 silly get     connection: 'keep-alive',
+74 silly get     'x-served-by': 'cache-den6021-DEN',
+74 silly get     'x-cache': 'HIT',
+74 silly get     'x-cache-hits': '2',
+74 silly get     'x-timer': 'S1494352453.984214,VS0,VE0',
+74 silly get     vary: 'Accept-Encoding' } ]
+75 verbose get saving mysql to C:\Users\root\AppData\Roaming\npm-cache\registry.npmjs.org\mysql\.cache.json
+76 verbose correctMkdir C:\Users\root\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+77 silly resolveWithNewModule secure-random-string@1.0.0 checking installable status
+78 silly cache add args [ 'secure-random-string@*', null ]
+79 verbose cache add spec secure-random-string@*
+80 silly cache add parsed spec Result {
+80 silly cache add   raw: 'secure-random-string@*',
+80 silly cache add   scope: null,
+80 silly cache add   escapedName: 'secure-random-string',
+80 silly cache add   name: 'secure-random-string',
+80 silly cache add   rawSpec: '*',
+80 silly cache add   spec: '*',
+80 silly cache add   type: 'range' }
+81 silly addNamed secure-random-string@*
+82 verbose addNamed "*" is a valid semver range for secure-random-string
+83 silly addNameRange { name: 'secure-random-string', range: '*', hasData: false }
+84 silly mapToRegistry name secure-random-string
+85 silly mapToRegistry using default registry
+86 silly mapToRegistry registry https://registry.npmjs.org/
+87 silly mapToRegistry data Result {
+87 silly mapToRegistry   raw: 'secure-random-string',
+87 silly mapToRegistry   scope: null,
+87 silly mapToRegistry   escapedName: 'secure-random-string',
+87 silly mapToRegistry   name: 'secure-random-string',
+87 silly mapToRegistry   rawSpec: '',
+87 silly mapToRegistry   spec: 'latest',
+87 silly mapToRegistry   type: 'tag' }
+88 silly mapToRegistry uri https://registry.npmjs.org/secure-random-string
+89 verbose addNameRange registry:https://registry.npmjs.org/secure-random-string not in flight; fetching
+90 verbose get https://registry.npmjs.org/secure-random-string not expired, no request
+91 silly addNameRange number 2 { name: 'secure-random-string', range: '*', hasData: true }
+92 silly addNameRange versions [ 'secure-random-string', [ '0.0.2', '0.1.0', '1.0.0' ] ]
+93 silly addNamed secure-random-string@1.0.0
+94 verbose addNamed "1.0.0" is a plain semver version for secure-random-string
+95 silly mapToRegistry name secure-random-string
+96 silly mapToRegistry using default registry
+97 silly mapToRegistry registry https://registry.npmjs.org/
+98 silly mapToRegistry data Result {
+98 silly mapToRegistry   raw: 'secure-random-string',
+98 silly mapToRegistry   scope: null,
+98 silly mapToRegistry   escapedName: 'secure-random-string',
+98 silly mapToRegistry   name: 'secure-random-string',
+98 silly mapToRegistry   rawSpec: '',
+98 silly mapToRegistry   spec: 'latest',
+98 silly mapToRegistry   type: 'tag' }
+99 silly mapToRegistry uri https://registry.npmjs.org/secure-random-string
+100 verbose addRemoteTarball https://registry.npmjs.org/secure-random-string/-/secure-random-string-1.0.0.tgz not in flight; adding
+101 verbose addRemoteTarball [ 'https://registry.npmjs.org/secure-random-string/-/secure-random-string-1.0.0.tgz',
+101 verbose addRemoteTarball   'fef5f0d809ed25f04e303ed801947956800de41a' ]
+102 silly resolveWithNewModule express-myconnection@1.0.4 checking installable status
+103 silly cache add args [ 'express-myconnection@1.0.4', null ]
+104 verbose cache add spec express-myconnection@1.0.4
+105 silly cache add parsed spec Result {
+105 silly cache add   raw: 'express-myconnection@1.0.4',
+105 silly cache add   scope: null,
+105 silly cache add   escapedName: 'express-myconnection',
+105 silly cache add   name: 'express-myconnection',
+105 silly cache add   rawSpec: '1.0.4',
+105 silly cache add   spec: '1.0.4',
+105 silly cache add   type: 'version' }
+106 silly addNamed express-myconnection@1.0.4
+107 verbose addNamed "1.0.4" is a plain semver version for express-myconnection
+108 silly mapToRegistry name express-myconnection
+109 silly mapToRegistry using default registry
+110 silly mapToRegistry registry https://registry.npmjs.org/
+111 silly mapToRegistry data Result {
+111 silly mapToRegistry   raw: 'express-myconnection',
+111 silly mapToRegistry   scope: null,
+111 silly mapToRegistry   escapedName: 'express-myconnection',
+111 silly mapToRegistry   name: 'express-myconnection',
+111 silly mapToRegistry   rawSpec: '',
+111 silly mapToRegistry   spec: 'latest',
+111 silly mapToRegistry   type: 'tag' }
+112 silly mapToRegistry uri https://registry.npmjs.org/express-myconnection
+113 verbose addNameVersion registry:https://registry.npmjs.org/express-myconnection not in flight; fetching
+114 verbose get https://registry.npmjs.org/express-myconnection not expired, no request
+115 info retry fetch attempt 1 at 11:54:13 AM
+116 info attempt registry request try #1 at 11:54:13 AM
+117 http fetch GET https://registry.npmjs.org/secure-random-string/-/secure-random-string-1.0.0.tgz
+118 silly mapToRegistry name express-myconnection
+119 silly mapToRegistry using default registry
+120 silly mapToRegistry registry https://registry.npmjs.org/
+121 silly mapToRegistry data Result {
+121 silly mapToRegistry   raw: 'express-myconnection',
+121 silly mapToRegistry   scope: null,
+121 silly mapToRegistry   escapedName: 'express-myconnection',
+121 silly mapToRegistry   name: 'express-myconnection',
+121 silly mapToRegistry   rawSpec: '',
+121 silly mapToRegistry   spec: 'latest',
+121 silly mapToRegistry   type: 'tag' }
+122 silly mapToRegistry uri https://registry.npmjs.org/express-myconnection
+123 verbose addRemoteTarball https://registry.npmjs.org/express-myconnection/-/express-myconnection-1.0.4.tgz not in flight; adding
+124 verbose addRemoteTarball [ 'https://registry.npmjs.org/express-myconnection/-/express-myconnection-1.0.4.tgz',
+124 verbose addRemoteTarball   '8776049fbf9f262209cffdb535b7c7509733ff55' ]
+125 info retry fetch attempt 1 at 11:54:13 AM
+126 info attempt registry request try #1 at 11:54:13 AM
+127 http fetch GET https://registry.npmjs.org/express-myconnection/-/express-myconnection-1.0.4.tgz
+128 silly resolveWithNewModule mysql@2.13.0 checking installable status
+129 silly cache add args [ 'mysql@2.13.0', null ]
+130 verbose cache add spec mysql@2.13.0
+131 silly cache add parsed spec Result {
+131 silly cache add   raw: 'mysql@2.13.0',
+131 silly cache add   scope: null,
+131 silly cache add   escapedName: 'mysql',
+131 silly cache add   name: 'mysql',
+131 silly cache add   rawSpec: '2.13.0',
+131 silly cache add   spec: '2.13.0',
+131 silly cache add   type: 'version' }
+132 silly addNamed mysql@2.13.0
+133 verbose addNamed "2.13.0" is a plain semver version for mysql
+134 silly mapToRegistry name mysql
+135 silly mapToRegistry using default registry
+136 silly mapToRegistry registry https://registry.npmjs.org/
+137 silly mapToRegistry data Result {
+137 silly mapToRegistry   raw: 'mysql',
+137 silly mapToRegistry   scope: null,
+137 silly mapToRegistry   escapedName: 'mysql',
+137 silly mapToRegistry   name: 'mysql',
+137 silly mapToRegistry   rawSpec: '',
+137 silly mapToRegistry   spec: 'latest',
+137 silly mapToRegistry   type: 'tag' }
+138 silly mapToRegistry uri https://registry.npmjs.org/mysql
+139 verbose addNameVersion registry:https://registry.npmjs.org/mysql not in flight; fetching
+140 verbose get https://registry.npmjs.org/mysql not expired, no request
+141 silly mapToRegistry name mysql
+142 silly mapToRegistry using default registry
+143 silly mapToRegistry registry https://registry.npmjs.org/
+144 silly mapToRegistry data Result {
+144 silly mapToRegistry   raw: 'mysql',
+144 silly mapToRegistry   scope: null,
+144 silly mapToRegistry   escapedName: 'mysql',
+144 silly mapToRegistry   name: 'mysql',
+144 silly mapToRegistry   rawSpec: '',
+144 silly mapToRegistry   spec: 'latest',
+144 silly mapToRegistry   type: 'tag' }
+145 silly mapToRegistry uri https://registry.npmjs.org/mysql
+146 verbose addRemoteTarball https://registry.npmjs.org/mysql/-/mysql-2.13.0.tgz not in flight; adding
+147 verbose addRemoteTarball [ 'https://registry.npmjs.org/mysql/-/mysql-2.13.0.tgz',
+147 verbose addRemoteTarball   '998f1f8ca46e2e3dd7149ce982413653986aae47' ]
+148 http 200 https://registry.npmjs.org/express
+149 verbose headers { server: 'nginx/1.10.1',
+149 verbose headers   'content-type': 'application/json',
+149 verbose headers   'last-modified': 'Tue, 09 May 2017 17:10:32 GMT',
+149 verbose headers   etag: 'W/"5911f808-8be67"',
+149 verbose headers   'content-encoding': 'gzip',
+149 verbose headers   'cache-control': 'max-age=300',
+149 verbose headers   'content-length': '43667',
+149 verbose headers   'accept-ranges': 'bytes',
+149 verbose headers   date: 'Tue, 09 May 2017 17:54:12 GMT',
+149 verbose headers   via: '1.1 varnish',
+149 verbose headers   age: '20',
+149 verbose headers   connection: 'keep-alive',
+149 verbose headers   'x-served-by': 'cache-den6025-DEN',
+149 verbose headers   'x-cache': 'HIT',
+149 verbose headers   'x-cache-hits': '54',
+149 verbose headers   'x-timer': 'S1494352453.989259,VS0,VE0',
+149 verbose headers   vary: 'Accept-Encoding' }
+150 silly get cb [ 200,
+150 silly get   { server: 'nginx/1.10.1',
+150 silly get     'content-type': 'application/json',
+150 silly get     'last-modified': 'Tue, 09 May 2017 17:10:32 GMT',
+150 silly get     etag: 'W/"5911f808-8be67"',
+150 silly get     'content-encoding': 'gzip',
+150 silly get     'cache-control': 'max-age=300',
+150 silly get     'content-length': '43667',
+150 silly get     'accept-ranges': 'bytes',
+150 silly get     date: 'Tue, 09 May 2017 17:54:12 GMT',
+150 silly get     via: '1.1 varnish',
+150 silly get     age: '20',
+150 silly get     connection: 'keep-alive',
+150 silly get     'x-served-by': 'cache-den6025-DEN',
+150 silly get     'x-cache': 'HIT',
+150 silly get     'x-cache-hits': '54',
+150 silly get     'x-timer': 'S1494352453.989259,VS0,VE0',
+150 silly get     vary: 'Accept-Encoding' } ]
+151 verbose get saving express to C:\Users\root\AppData\Roaming\npm-cache\registry.npmjs.org\express\.cache.json
+152 verbose correctMkdir C:\Users\root\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+153 info retry fetch attempt 1 at 11:54:13 AM
+154 info attempt registry request try #1 at 11:54:13 AM
+155 http fetch GET https://registry.npmjs.org/mysql/-/mysql-2.13.0.tgz
+156 http fetch 200 https://registry.npmjs.org/secure-random-string/-/secure-random-string-1.0.0.tgz
+157 http fetch 200 https://registry.npmjs.org/express-myconnection/-/express-myconnection-1.0.4.tgz
+158 silly fetchAndShaCheck shasum 8776049fbf9f262209cffdb535b7c7509733ff55
+159 silly fetchAndShaCheck shasum fef5f0d809ed25f04e303ed801947956800de41a
+160 verbose addTmpTarball C:\Users\root\AppData\Local\Temp\npm-7572-8d1317d6\registry.npmjs.org\express-myconnection\-\express-myconnection-1.0.4.tgz not in flight; adding
+161 verbose addTmpTarball already have metadata; skipping unpack for express-myconnection@1.0.4
+162 verbose correctMkdir C:\Users\root\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+163 verbose addTmpTarball C:\Users\root\AppData\Local\Temp\npm-7572-8d1317d6\registry.npmjs.org\secure-random-string\-\secure-random-string-1.0.0.tgz not in flight; adding
+164 verbose addTmpTarball already have metadata; skipping unpack for secure-random-string@1.0.0
+165 verbose correctMkdir C:\Users\root\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+166 silly resolveWithNewModule express@4.15.0 checking installable status
+167 silly cache add args [ 'express@4.15.0', null ]
+168 verbose cache add spec express@4.15.0
+169 silly cache add parsed spec Result {
+169 silly cache add   raw: 'express@4.15.0',
+169 silly cache add   scope: null,
+169 silly cache add   escapedName: 'express',
+169 silly cache add   name: 'express',
+169 silly cache add   rawSpec: '4.15.0',
+169 silly cache add   spec: '4.15.0',
+169 silly cache add   type: 'version' }
+170 silly addNamed express@4.15.0
+171 verbose addNamed "4.15.0" is a plain semver version for express
+172 silly mapToRegistry name express
+173 silly mapToRegistry using default registry
+174 silly mapToRegistry registry https://registry.npmjs.org/
+175 silly mapToRegistry data Result {
+175 silly mapToRegistry   raw: 'express',
+175 silly mapToRegistry   scope: null,
+175 silly mapToRegistry   escapedName: 'express',
+175 silly mapToRegistry   name: 'express',
+175 silly mapToRegistry   rawSpec: '',
+175 silly mapToRegistry   spec: 'latest',
+175 silly mapToRegistry   type: 'tag' }
+176 silly mapToRegistry uri https://registry.npmjs.org/express
+177 verbose addNameVersion registry:https://registry.npmjs.org/express not in flight; fetching
+178 http fetch 200 https://registry.npmjs.org/mysql/-/mysql-2.13.0.tgz
+179 verbose get https://registry.npmjs.org/express not expired, no request
+180 silly mapToRegistry name express
+181 silly mapToRegistry using default registry
+182 silly mapToRegistry registry https://registry.npmjs.org/
+183 silly mapToRegistry data Result {
+183 silly mapToRegistry   raw: 'express',
+183 silly mapToRegistry   scope: null,
+183 silly mapToRegistry   escapedName: 'express',
+183 silly mapToRegistry   name: 'express',
+183 silly mapToRegistry   rawSpec: '',
+183 silly mapToRegistry   spec: 'latest',
+183 silly mapToRegistry   type: 'tag' }
+184 silly mapToRegistry uri https://registry.npmjs.org/express
+185 verbose addRemoteTarball https://registry.npmjs.org/express/-/express-4.15.0.tgz not in flight; adding
+186 verbose addRemoteTarball [ 'https://registry.npmjs.org/express/-/express-4.15.0.tgz',
+186 verbose addRemoteTarball   '8fb125829f70a04a59e1c40ceb8dea19cf5c879c' ]
+187 info retry fetch attempt 1 at 11:54:13 AM
+188 info attempt registry request try #1 at 11:54:13 AM
+189 http fetch GET https://registry.npmjs.org/express/-/express-4.15.0.tgz
+190 silly cache afterAdd secure-random-string@1.0.0
+191 verbose afterAdd C:\Users\root\AppData\Roaming\npm-cache\secure-random-string\1.0.0\package\package.json not in flight; writing
+192 verbose correctMkdir C:\Users\root\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+193 silly cache afterAdd express-myconnection@1.0.4
+194 verbose afterAdd C:\Users\root\AppData\Roaming\npm-cache\express-myconnection\1.0.4\package\package.json not in flight; writing
+195 verbose correctMkdir C:\Users\root\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+196 silly fetchAndShaCheck shasum 998f1f8ca46e2e3dd7149ce982413653986aae47
+197 verbose addTmpTarball C:\Users\root\AppData\Local\Temp\npm-7572-8d1317d6\registry.npmjs.org\mysql\-\mysql-2.13.0.tgz not in flight; adding
+198 verbose addTmpTarball already have metadata; skipping unpack for mysql@2.13.0
+199 verbose correctMkdir C:\Users\root\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+200 verbose afterAdd C:\Users\root\AppData\Roaming\npm-cache\secure-random-string\1.0.0\package\package.json written
+201 verbose afterAdd C:\Users\root\AppData\Roaming\npm-cache\express-myconnection\1.0.4\package\package.json written
+202 http fetch 200 https://registry.npmjs.org/express/-/express-4.15.0.tgz
+203 silly cache afterAdd mysql@2.13.0
+204 verbose afterAdd C:\Users\root\AppData\Roaming\npm-cache\mysql\2.13.0\package\package.json not in flight; writing
+205 verbose correctMkdir C:\Users\root\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+206 verbose afterAdd C:\Users\root\AppData\Roaming\npm-cache\mysql\2.13.0\package\package.json written
+207 silly fetchAndShaCheck shasum 8fb125829f70a04a59e1c40ceb8dea19cf5c879c
+208 verbose addTmpTarball C:\Users\root\AppData\Local\Temp\npm-7572-8d1317d6\registry.npmjs.org\express\-\express-4.15.0.tgz not in flight; adding
+209 verbose addTmpTarball already have metadata; skipping unpack for express@4.15.0
+210 verbose correctMkdir C:\Users\root\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+211 silly cache afterAdd express@4.15.0
+212 verbose afterAdd C:\Users\root\AppData\Roaming\npm-cache\express\4.15.0\package\package.json not in flight; writing
+213 verbose correctMkdir C:\Users\root\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+214 verbose afterAdd C:\Users\root\AppData\Roaming\npm-cache\express\4.15.0\package\package.json written
+215 silly fetchNamedPackageData finalhandler
+216 silly mapToRegistry name finalhandler
+217 silly mapToRegistry using default registry
+218 silly mapToRegistry registry https://registry.npmjs.org/
+219 silly mapToRegistry data Result {
+219 silly mapToRegistry   raw: 'finalhandler',
+219 silly mapToRegistry   scope: null,
+219 silly mapToRegistry   escapedName: 'finalhandler',
+219 silly mapToRegistry   name: 'finalhandler',
+219 silly mapToRegistry   rawSpec: '',
+219 silly mapToRegistry   spec: 'latest',
+219 silly mapToRegistry   type: 'tag' }
+220 silly mapToRegistry uri https://registry.npmjs.org/finalhandler
+221 silly fetchNamedPackageData utils-merge
+222 silly mapToRegistry name utils-merge
+223 silly mapToRegistry using default registry
+224 silly mapToRegistry registry https://registry.npmjs.org/
+225 silly mapToRegistry data Result {
+225 silly mapToRegistry   raw: 'utils-merge',
+225 silly mapToRegistry   scope: null,
+225 silly mapToRegistry   escapedName: 'utils-merge',
+225 silly mapToRegistry   name: 'utils-merge',
+225 silly mapToRegistry   rawSpec: '',
+225 silly mapToRegistry   spec: 'latest',
+225 silly mapToRegistry   type: 'tag' }
+226 silly mapToRegistry uri https://registry.npmjs.org/utils-merge
+227 silly fetchNamedPackageData vary
+228 silly mapToRegistry name vary
+229 silly mapToRegistry using default registry
+230 silly mapToRegistry registry https://registry.npmjs.org/
+231 silly mapToRegistry data Result {
+231 silly mapToRegistry   raw: 'vary',
+231 silly mapToRegistry   scope: null,
+231 silly mapToRegistry   escapedName: 'vary',
+231 silly mapToRegistry   name: 'vary',
+231 silly mapToRegistry   rawSpec: '',
+231 silly mapToRegistry   spec: 'latest',
+231 silly mapToRegistry   type: 'tag' }
+232 silly mapToRegistry uri https://registry.npmjs.org/vary
+233 verbose request uri https://registry.npmjs.org/finalhandler
+234 verbose request no auth needed
+235 info attempt registry request try #1 at 11:54:13 AM
+236 http request GET https://registry.npmjs.org/finalhandler
+237 verbose request uri https://registry.npmjs.org/utils-merge
+238 verbose request no auth needed
+239 info attempt registry request try #1 at 11:54:13 AM
+240 http request GET https://registry.npmjs.org/utils-merge
+241 verbose request uri https://registry.npmjs.org/vary
+242 verbose request no auth needed
+243 info attempt registry request try #1 at 11:54:13 AM
+244 http request GET https://registry.npmjs.org/vary
+245 http 200 https://registry.npmjs.org/utils-merge
+246 verbose headers { server: 'nginx/1.10.1',
+246 verbose headers   'content-type': 'application/json',
+246 verbose headers   'last-modified': 'Thu, 01 Dec 2016 18:04:16 GMT',
+246 verbose headers   etag: 'W/"58406620-9cd"',
+246 verbose headers   'content-encoding': 'gzip',
+246 verbose headers   'cache-control': 'max-age=300',
+246 verbose headers   'content-length': '1018',
+246 verbose headers   'accept-ranges': 'bytes',
+246 verbose headers   date: 'Tue, 09 May 2017 17:54:13 GMT',
+246 verbose headers   via: '1.1 varnish',
+246 verbose headers   age: '248',
+246 verbose headers   connection: 'keep-alive',
+246 verbose headers   'x-served-by': 'cache-den6021-DEN',
+246 verbose headers   'x-cache': 'HIT',
+246 verbose headers   'x-cache-hits': '2',
+246 verbose headers   'x-timer': 'S1494352453.178310,VS0,VE0',
+246 verbose headers   vary: 'Accept-Encoding' }
+247 silly get cb [ 200,
+247 silly get   { server: 'nginx/1.10.1',
+247 silly get     'content-type': 'application/json',
+247 silly get     'last-modified': 'Thu, 01 Dec 2016 18:04:16 GMT',
+247 silly get     etag: 'W/"58406620-9cd"',
+247 silly get     'content-encoding': 'gzip',
+247 silly get     'cache-control': 'max-age=300',
+247 silly get     'content-length': '1018',
+247 silly get     'accept-ranges': 'bytes',
+247 silly get     date: 'Tue, 09 May 2017 17:54:13 GMT',
+247 silly get     via: '1.1 varnish',
+247 silly get     age: '248',
+247 silly get     connection: 'keep-alive',
+247 silly get     'x-served-by': 'cache-den6021-DEN',
+247 silly get     'x-cache': 'HIT',
+247 silly get     'x-cache-hits': '2',
+247 silly get     'x-timer': 'S1494352453.178310,VS0,VE0',
+247 silly get     vary: 'Accept-Encoding' } ]
+248 verbose get saving utils-merge to C:\Users\root\AppData\Roaming\npm-cache\registry.npmjs.org\utils-merge\.cache.json
+249 verbose correctMkdir C:\Users\root\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+250 http 200 https://registry.npmjs.org/vary
+251 verbose headers { server: 'nginx/1.10.1',
+251 verbose headers   'content-type': 'application/json',
+251 verbose headers   'last-modified': 'Mon, 20 Mar 2017 21:32:29 GMT',
+251 verbose headers   etag: 'W/"58d04a6d-2eee"',
+251 verbose headers   'content-encoding': 'gzip',
+251 verbose headers   'cache-control': 'max-age=300',
+251 verbose headers   'content-length': '2759',
+251 verbose headers   'accept-ranges': 'bytes',
+251 verbose headers   date: 'Tue, 09 May 2017 17:54:13 GMT',
+251 verbose headers   via: '1.1 varnish',
+251 verbose headers   age: '102',
+251 verbose headers   connection: 'keep-alive',
+251 verbose headers   'x-served-by': 'cache-den6021-DEN',
+251 verbose headers   'x-cache': 'HIT',
+251 verbose headers   'x-cache-hits': '2',
+251 verbose headers   'x-timer': 'S1494352453.178585,VS0,VE0',
+251 verbose headers   vary: 'Accept-Encoding' }
+252 silly get cb [ 200,
+252 silly get   { server: 'nginx/1.10.1',
+252 silly get     'content-type': 'application/json',
+252 silly get     'last-modified': 'Mon, 20 Mar 2017 21:32:29 GMT',
+252 silly get     etag: 'W/"58d04a6d-2eee"',
+252 silly get     'content-encoding': 'gzip',
+252 silly get     'cache-control': 'max-age=300',
+252 silly get     'content-length': '2759',
+252 silly get     'accept-ranges': 'bytes',
+252 silly get     date: 'Tue, 09 May 2017 17:54:13 GMT',
+252 silly get     via: '1.1 varnish',
+252 silly get     age: '102',
+252 silly get     connection: 'keep-alive',
+252 silly get     'x-served-by': 'cache-den6021-DEN',
+252 silly get     'x-cache': 'HIT',
+252 silly get     'x-cache-hits': '2',
+252 silly get     'x-timer': 'S1494352453.178585,VS0,VE0',
+252 silly get     vary: 'Accept-Encoding' } ]
+253 verbose get saving vary to C:\Users\root\AppData\Roaming\npm-cache\registry.npmjs.org\vary\.cache.json
+254 verbose correctMkdir C:\Users\root\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+255 http 200 https://registry.npmjs.org/finalhandler
+256 verbose headers { server: 'nginx/1.10.1',
+256 verbose headers   'content-type': 'application/json',
+256 verbose headers   'last-modified': 'Tue, 09 May 2017 06:46:11 GMT',
+256 verbose headers   etag: 'W/"591165b3-93df"',
+256 verbose headers   'content-encoding': 'gzip',
+256 verbose headers   'cache-control': 'max-age=300',
+256 verbose headers   'content-length': '4996',
+256 verbose headers   'accept-ranges': 'bytes',
+256 verbose headers   date: 'Tue, 09 May 2017 17:54:13 GMT',
+256 verbose headers   via: '1.1 varnish',
+256 verbose headers   age: '249',
+256 verbose headers   connection: 'keep-alive',
+256 verbose headers   'x-served-by': 'cache-den6025-DEN',
+256 verbose headers   'x-cache': 'HIT',
+256 verbose headers   'x-cache-hits': '2',
+256 verbose headers   'x-timer': 'S1494352453.178436,VS0,VE0',
+256 verbose headers   vary: 'Accept-Encoding' }
+257 silly get cb [ 200,
+257 silly get   { server: 'nginx/1.10.1',
+257 silly get     'content-type': 'application/json',
+257 silly get     'last-modified': 'Tue, 09 May 2017 06:46:11 GMT',
+257 silly get     etag: 'W/"591165b3-93df"',
+257 silly get     'content-encoding': 'gzip',
+257 silly get     'cache-control': 'max-age=300',
+257 silly get     'content-length': '4996',
+257 silly get     'accept-ranges': 'bytes',
+257 silly get     date: 'Tue, 09 May 2017 17:54:13 GMT',
+257 silly get     via: '1.1 varnish',
+257 silly get     age: '249',
+257 silly get     connection: 'keep-alive',
+257 silly get     'x-served-by': 'cache-den6025-DEN',
+257 silly get     'x-cache': 'HIT',
+257 silly get     'x-cache-hits': '2',
+257 silly get     'x-timer': 'S1494352453.178436,VS0,VE0',
+257 silly get     vary: 'Accept-Encoding' } ]
+258 verbose get saving finalhandler to C:\Users\root\AppData\Roaming\npm-cache\registry.npmjs.org\finalhandler\.cache.json
+259 verbose correctMkdir C:\Users\root\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+260 silly resolveWithNewModule finalhandler@1.0.2 checking installable status
+261 silly cache add args [ 'finalhandler@~1.0.0', null ]
+262 verbose cache add spec finalhandler@~1.0.0
+263 silly cache add parsed spec Result {
+263 silly cache add   raw: 'finalhandler@~1.0.0',
+263 silly cache add   scope: null,
+263 silly cache add   escapedName: 'finalhandler',
+263 silly cache add   name: 'finalhandler',
+263 silly cache add   rawSpec: '~1.0.0',
+263 silly cache add   spec: '>=1.0.0 <1.1.0',
+263 silly cache add   type: 'range' }
+264 silly addNamed finalhandler@>=1.0.0 <1.1.0
+265 verbose addNamed ">=1.0.0 <1.1.0" is a valid semver range for finalhandler
+266 silly addNameRange { name: 'finalhandler', range: '>=1.0.0 <1.1.0', hasData: false }
+267 silly mapToRegistry name finalhandler
+268 silly mapToRegistry using default registry
+269 silly mapToRegistry registry https://registry.npmjs.org/
+270 silly mapToRegistry data Result {
+270 silly mapToRegistry   raw: 'finalhandler',
+270 silly mapToRegistry   scope: null,
+270 silly mapToRegistry   escapedName: 'finalhandler',
+270 silly mapToRegistry   name: 'finalhandler',
+270 silly mapToRegistry   rawSpec: '',
+270 silly mapToRegistry   spec: 'latest',
+270 silly mapToRegistry   type: 'tag' }
+271 silly mapToRegistry uri https://registry.npmjs.org/finalhandler
+272 verbose addNameRange registry:https://registry.npmjs.org/finalhandler not in flight; fetching
+273 verbose get https://registry.npmjs.org/finalhandler not expired, no request
+274 silly addNameRange number 2 { name: 'finalhandler', range: '>=1.0.0 <1.1.0', hasData: true }
+275 silly addNameRange versions [ 'finalhandler',
+275 silly addNameRange   [ '0.0.0',
+275 silly addNameRange     '0.0.1',
+275 silly addNameRange     '0.0.2',
+275 silly addNameRange     '0.0.3',
+275 silly addNameRange     '0.1.0',
+275 silly addNameRange     '0.2.0',
+275 silly addNameRange     '0.3.0',
+275 silly addNameRange     '0.3.1',
+275 silly addNameRange     '0.3.2',
+275 silly addNameRange     '0.3.3',
+275 silly addNameRange     '0.3.4',
+275 silly addNameRange     '0.3.5',
+275 silly addNameRange     '0.3.6',
+275 silly addNameRange     '0.4.0',
+275 silly addNameRange     '0.4.1',
+275 silly addNameRange     '0.5.0',
+275 silly addNameRange     '0.5.1',
+275 silly addNameRange     '1.0.0',
+275 silly addNameRange     '1.0.1',
+275 silly addNameRange     '1.0.2' ] ]
+276 silly addNamed finalhandler@1.0.2
+277 verbose addNamed "1.0.2" is a plain semver version for finalhandler
+278 silly resolveWithNewModule utils-merge@1.0.0 checking installable status
+279 silly cache add args [ 'utils-merge@1.0.0', null ]
+280 verbose cache add spec utils-merge@1.0.0
+281 silly cache add parsed spec Result {
+281 silly cache add   raw: 'utils-merge@1.0.0',
+281 silly cache add   scope: null,
+281 silly cache add   escapedName: 'utils-merge',
+281 silly cache add   name: 'utils-merge',
+281 silly cache add   rawSpec: '1.0.0',
+281 silly cache add   spec: '1.0.0',
+281 silly cache add   type: 'version' }
+282 silly addNamed utils-merge@1.0.0
+283 verbose addNamed "1.0.0" is a plain semver version for utils-merge
+284 silly mapToRegistry name utils-merge
+285 silly mapToRegistry using default registry
+286 silly mapToRegistry registry https://registry.npmjs.org/
+287 silly mapToRegistry data Result {
+287 silly mapToRegistry   raw: 'utils-merge',
+287 silly mapToRegistry   scope: null,
+287 silly mapToRegistry   escapedName: 'utils-merge',
+287 silly mapToRegistry   name: 'utils-merge',
+287 silly mapToRegistry   rawSpec: '',
+287 silly mapToRegistry   spec: 'latest',
+287 silly mapToRegistry   type: 'tag' }
+288 silly mapToRegistry uri https://registry.npmjs.org/utils-merge
+289 verbose addNameVersion registry:https://registry.npmjs.org/utils-merge not in flight; fetching
+290 silly resolveWithNewModule vary@1.1.1 checking installable status
+291 silly cache add args [ 'vary@~1.1.0', null ]
+292 verbose cache add spec vary@~1.1.0
+293 silly cache add parsed spec Result {
+293 silly cache add   raw: 'vary@~1.1.0',
+293 silly cache add   scope: null,
+293 silly cache add   escapedName: 'vary',
+293 silly cache add   name: 'vary',
+293 silly cache add   rawSpec: '~1.1.0',
+293 silly cache add   spec: '>=1.1.0 <1.2.0',
+293 silly cache add   type: 'range' }
+294 silly addNamed vary@>=1.1.0 <1.2.0
+295 verbose addNamed ">=1.1.0 <1.2.0" is a valid semver range for vary
+296 silly addNameRange { name: 'vary', range: '>=1.1.0 <1.2.0', hasData: false }
+297 silly mapToRegistry name vary
+298 silly mapToRegistry using default registry
+299 silly mapToRegistry registry https://registry.npmjs.org/
+300 silly mapToRegistry data Result {
+300 silly mapToRegistry   raw: 'vary',
+300 silly mapToRegistry   scope: null,
+300 silly mapToRegistry   escapedName: 'vary',
+300 silly mapToRegistry   name: 'vary',
+300 silly mapToRegistry   rawSpec: '',
+300 silly mapToRegistry   spec: 'latest',
+300 silly mapToRegistry   type: 'tag' }
+301 silly mapToRegistry uri https://registry.npmjs.org/vary
+302 verbose addNameRange registry:https://registry.npmjs.org/vary not in flight; fetching
+303 silly mapToRegistry name finalhandler
+304 silly mapToRegistry using default registry
+305 silly mapToRegistry registry https://registry.npmjs.org/
+306 silly mapToRegistry data Result {
+306 silly mapToRegistry   raw: 'finalhandler',
+306 silly mapToRegistry   scope: null,
+306 silly mapToRegistry   escapedName: 'finalhandler',
+306 silly mapToRegistry   name: 'finalhandler',
+306 silly mapToRegistry   rawSpec: '',
+306 silly mapToRegistry   spec: 'latest',
+306 silly mapToRegistry   type: 'tag' }
+307 silly mapToRegistry uri https://registry.npmjs.org/finalhandler
+308 verbose addRemoteTarball https://registry.npmjs.org/finalhandler/-/finalhandler-1.0.2.tgz not in flight; adding
+309 verbose addRemoteTarball [ 'https://registry.npmjs.org/finalhandler/-/finalhandler-1.0.2.tgz',
+309 verbose addRemoteTarball   'd0e36f9dbc557f2de14423df6261889e9d60c93a' ]
+310 verbose get https://registry.npmjs.org/utils-merge not expired, no request
+311 verbose get https://registry.npmjs.org/vary not expired, no request
+312 silly addNameRange number 2 { name: 'vary', range: '>=1.1.0 <1.2.0', hasData: true }
+313 silly addNameRange versions [ 'vary',
+313 silly addNameRange   [ '0.0.0', '0.1.0', '1.0.0', '1.0.1', '1.1.0', '1.1.1' ] ]
+314 silly addNamed vary@1.1.1
+315 verbose addNamed "1.1.1" is a plain semver version for vary
+316 silly mapToRegistry name utils-merge
+317 silly mapToRegistry using default registry
+318 silly mapToRegistry registry https://registry.npmjs.org/
+319 silly mapToRegistry data Result {
+319 silly mapToRegistry   raw: 'utils-merge',
+319 silly mapToRegistry   scope: null,
+319 silly mapToRegistry   escapedName: 'utils-merge',
+319 silly mapToRegistry   name: 'utils-merge',
+319 silly mapToRegistry   rawSpec: '',
+319 silly mapToRegistry   spec: 'latest',
+319 silly mapToRegistry   type: 'tag' }
+320 silly mapToRegistry uri https://registry.npmjs.org/utils-merge
+321 verbose addRemoteTarball https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.0.tgz not in flight; adding
+322 verbose addRemoteTarball [ 'https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.0.tgz',
+322 verbose addRemoteTarball   '0294fb922bb9375153541c4f7096231f287c8af8' ]
+323 info retry fetch attempt 1 at 11:54:13 AM
+324 info attempt registry request try #1 at 11:54:13 AM
+325 http fetch GET https://registry.npmjs.org/finalhandler/-/finalhandler-1.0.2.tgz
+326 silly mapToRegistry name vary
+327 silly mapToRegistry using default registry
+328 silly mapToRegistry registry https://registry.npmjs.org/
+329 silly mapToRegistry data Result {
+329 silly mapToRegistry   raw: 'vary',
+329 silly mapToRegistry   scope: null,
+329 silly mapToRegistry   escapedName: 'vary',
+329 silly mapToRegistry   name: 'vary',
+329 silly mapToRegistry   rawSpec: '',
+329 silly mapToRegistry   spec: 'latest',
+329 silly mapToRegistry   type: 'tag' }
+330 silly mapToRegistry uri https://registry.npmjs.org/vary
+331 verbose addRemoteTarball https://registry.npmjs.org/vary/-/vary-1.1.1.tgz not in flight; adding
+332 verbose addRemoteTarball [ 'https://registry.npmjs.org/vary/-/vary-1.1.1.tgz',
+332 verbose addRemoteTarball   '67535ebb694c1d52257457984665323f587e8d37' ]
+333 info retry fetch attempt 1 at 11:54:13 AM
+334 info attempt registry request try #1 at 11:54:13 AM
+335 http fetch GET https://registry.npmjs.org/vary/-/vary-1.1.1.tgz
+336 info retry fetch attempt 1 at 11:54:13 AM
+337 info attempt registry request try #1 at 11:54:13 AM
+338 http fetch GET https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.0.tgz
+339 http fetch 200 https://registry.npmjs.org/finalhandler/-/finalhandler-1.0.2.tgz
+340 http fetch 200 https://registry.npmjs.org/vary/-/vary-1.1.1.tgz
+341 http fetch 200 https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.0.tgz
+342 silly fetchAndShaCheck shasum 67535ebb694c1d52257457984665323f587e8d37
+343 silly fetchAndShaCheck shasum 0294fb922bb9375153541c4f7096231f287c8af8
+344 silly fetchAndShaCheck shasum d0e36f9dbc557f2de14423df6261889e9d60c93a
+345 verbose addTmpTarball C:\Users\root\AppData\Local\Temp\npm-7572-8d1317d6\registry.npmjs.org\vary\-\vary-1.1.1.tgz not in flight; adding
+346 verbose addTmpTarball already have metadata; skipping unpack for vary@1.1.1
+347 verbose correctMkdir C:\Users\root\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+348 verbose addTmpTarball C:\Users\root\AppData\Local\Temp\npm-7572-8d1317d6\registry.npmjs.org\utils-merge\-\utils-merge-1.0.0.tgz not in flight; adding
+349 verbose addTmpTarball already have metadata; skipping unpack for utils-merge@1.0.0
+350 verbose correctMkdir C:\Users\root\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+351 verbose addTmpTarball C:\Users\root\AppData\Local\Temp\npm-7572-8d1317d6\registry.npmjs.org\finalhandler\-\finalhandler-1.0.2.tgz not in flight; adding
+352 verbose addTmpTarball already have metadata; skipping unpack for finalhandler@1.0.2
+353 verbose correctMkdir C:\Users\root\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+354 silly cache afterAdd finalhandler@1.0.2
+355 verbose afterAdd C:\Users\root\AppData\Roaming\npm-cache\finalhandler\1.0.2\package\package.json not in flight; writing
+356 verbose correctMkdir C:\Users\root\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+357 silly cache afterAdd vary@1.1.1
+358 verbose afterAdd C:\Users\root\AppData\Roaming\npm-cache\vary\1.1.1\package\package.json not in flight; writing
+359 verbose correctMkdir C:\Users\root\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+360 silly cache afterAdd utils-merge@1.0.0
+361 verbose afterAdd C:\Users\root\AppData\Roaming\npm-cache\utils-merge\1.0.0\package\package.json not in flight; writing
+362 verbose correctMkdir C:\Users\root\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+363 verbose afterAdd C:\Users\root\AppData\Roaming\npm-cache\vary\1.1.1\package\package.json written
+364 verbose afterAdd C:\Users\root\AppData\Roaming\npm-cache\finalhandler\1.0.2\package\package.json written
+365 verbose afterAdd C:\Users\root\AppData\Roaming\npm-cache\utils-merge\1.0.0\package\package.json written
+366 silly fetchNamedPackageData debug
+367 silly mapToRegistry name debug
+368 silly mapToRegistry using default registry
+369 silly mapToRegistry registry https://registry.npmjs.org/
+370 silly mapToRegistry data Result {
+370 silly mapToRegistry   raw: 'debug',
+370 silly mapToRegistry   scope: null,
+370 silly mapToRegistry   escapedName: 'debug',
+370 silly mapToRegistry   name: 'debug',
+370 silly mapToRegistry   rawSpec: '',
+370 silly mapToRegistry   spec: 'latest',
+370 silly mapToRegistry   type: 'tag' }
+371 silly mapToRegistry uri https://registry.npmjs.org/debug
+372 silly fetchNamedPackageData unpipe
+373 silly mapToRegistry name unpipe
+374 silly mapToRegistry using default registry
+375 silly mapToRegistry registry https://registry.npmjs.org/
+376 silly mapToRegistry data Result {
+376 silly mapToRegistry   raw: 'unpipe',
+376 silly mapToRegistry   scope: null,
+376 silly mapToRegistry   escapedName: 'unpipe',
+376 silly mapToRegistry   name: 'unpipe',
+376 silly mapToRegistry   rawSpec: '',
+376 silly mapToRegistry   spec: 'latest',
+376 silly mapToRegistry   type: 'tag' }
+377 silly mapToRegistry uri https://registry.npmjs.org/unpipe
+378 verbose request uri https://registry.npmjs.org/debug
+379 verbose request no auth needed
+380 info attempt registry request try #1 at 11:54:13 AM
+381 http request GET https://registry.npmjs.org/debug
+382 verbose request uri https://registry.npmjs.org/unpipe
+383 verbose request no auth needed
+384 info attempt registry request try #1 at 11:54:13 AM
+385 http request GET https://registry.npmjs.org/unpipe
+386 http 200 https://registry.npmjs.org/unpipe
+387 verbose headers { server: 'nginx/1.10.1',
+387 verbose headers   'content-type': 'application/json',
+387 verbose headers   'last-modified': 'Thu, 04 Feb 2016 18:32:34 GMT',
+387 verbose headers   etag: 'W/"56b39942-ccf"',
+387 verbose headers   'content-encoding': 'gzip',
+387 verbose headers   'cache-control': 'max-age=300',
+387 verbose headers   'content-length': '1225',
+387 verbose headers   'accept-ranges': 'bytes',
+387 verbose headers   date: 'Tue, 09 May 2017 17:54:13 GMT',
+387 verbose headers   via: '1.1 varnish',
+387 verbose headers   age: '250',
+387 verbose headers   connection: 'keep-alive',
+387 verbose headers   'x-served-by': 'cache-den6025-DEN',
+387 verbose headers   'x-cache': 'HIT',
+387 verbose headers   'x-cache-hits': '7',
+387 verbose headers   'x-timer': 'S1494352453.253404,VS0,VE0',
+387 verbose headers   vary: 'Accept-Encoding' }
+388 silly get cb [ 200,
+388 silly get   { server: 'nginx/1.10.1',
+388 silly get     'content-type': 'application/json',
+388 silly get     'last-modified': 'Thu, 04 Feb 2016 18:32:34 GMT',
+388 silly get     etag: 'W/"56b39942-ccf"',
+388 silly get     'content-encoding': 'gzip',
+388 silly get     'cache-control': 'max-age=300',
+388 silly get     'content-length': '1225',
+388 silly get     'accept-ranges': 'bytes',
+388 silly get     date: 'Tue, 09 May 2017 17:54:13 GMT',
+388 silly get     via: '1.1 varnish',
+388 silly get     age: '250',
+388 silly get     connection: 'keep-alive',
+388 silly get     'x-served-by': 'cache-den6025-DEN',
+388 silly get     'x-cache': 'HIT',
+388 silly get     'x-cache-hits': '7',
+388 silly get     'x-timer': 'S1494352453.253404,VS0,VE0',
+388 silly get     vary: 'Accept-Encoding' } ]
+389 verbose get saving unpipe to C:\Users\root\AppData\Roaming\npm-cache\registry.npmjs.org\unpipe\.cache.json
+390 verbose correctMkdir C:\Users\root\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+391 http 200 https://registry.npmjs.org/debug
+392 verbose headers { server: 'nginx/1.10.1',
+392 verbose headers   'content-type': 'application/json',
+392 verbose headers   'last-modified': 'Tue, 09 May 2017 09:50:10 GMT',
+392 verbose headers   etag: 'W/"591190d2-14ff8"',
+392 verbose headers   'content-encoding': 'gzip',
+392 verbose headers   'cache-control': 'max-age=300',
+392 verbose headers   'content-length': '14246',
+392 verbose headers   'accept-ranges': 'bytes',
+392 verbose headers   date: 'Tue, 09 May 2017 17:54:13 GMT',
+392 verbose headers   via: '1.1 varnish',
+392 verbose headers   age: '70',
+392 verbose headers   connection: 'keep-alive',
+392 verbose headers   'x-served-by': 'cache-den6021-DEN',
+392 verbose headers   'x-cache': 'HIT',
+392 verbose headers   'x-cache-hits': '1',
+392 verbose headers   'x-timer': 'S1494352453.253220,VS0,VE0',
+392 verbose headers   vary: 'Accept-Encoding' }
+393 silly get cb [ 200,
+393 silly get   { server: 'nginx/1.10.1',
+393 silly get     'content-type': 'application/json',
+393 silly get     'last-modified': 'Tue, 09 May 2017 09:50:10 GMT',
+393 silly get     etag: 'W/"591190d2-14ff8"',
+393 silly get     'content-encoding': 'gzip',
+393 silly get     'cache-control': 'max-age=300',
+393 silly get     'content-length': '14246',
+393 silly get     'accept-ranges': 'bytes',
+393 silly get     date: 'Tue, 09 May 2017 17:54:13 GMT',
+393 silly get     via: '1.1 varnish',
+393 silly get     age: '70',
+393 silly get     connection: 'keep-alive',
+393 silly get     'x-served-by': 'cache-den6021-DEN',
+393 silly get     'x-cache': 'HIT',
+393 silly get     'x-cache-hits': '1',
+393 silly get     'x-timer': 'S1494352453.253220,VS0,VE0',
+393 silly get     vary: 'Accept-Encoding' } ]
+394 verbose get saving debug to C:\Users\root\AppData\Roaming\npm-cache\registry.npmjs.org\debug\.cache.json
+395 verbose correctMkdir C:\Users\root\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+396 silly resolveWithNewModule unpipe@1.0.0 checking installable status
+397 silly cache add args [ 'unpipe@~1.0.0', null ]
+398 verbose cache add spec unpipe@~1.0.0
+399 silly cache add parsed spec Result {
+399 silly cache add   raw: 'unpipe@~1.0.0',
+399 silly cache add   scope: null,
+399 silly cache add   escapedName: 'unpipe',
+399 silly cache add   name: 'unpipe',
+399 silly cache add   rawSpec: '~1.0.0',
+399 silly cache add   spec: '>=1.0.0 <1.1.0',
+399 silly cache add   type: 'range' }
+400 silly addNamed unpipe@>=1.0.0 <1.1.0
+401 verbose addNamed ">=1.0.0 <1.1.0" is a valid semver range for unpipe
+402 silly addNameRange { name: 'unpipe', range: '>=1.0.0 <1.1.0', hasData: false }
+403 silly mapToRegistry name unpipe
+404 silly mapToRegistry using default registry
+405 silly mapToRegistry registry https://registry.npmjs.org/
+406 silly mapToRegistry data Result {
+406 silly mapToRegistry   raw: 'unpipe',
+406 silly mapToRegistry   scope: null,
+406 silly mapToRegistry   escapedName: 'unpipe',
+406 silly mapToRegistry   name: 'unpipe',
+406 silly mapToRegistry   rawSpec: '',
+406 silly mapToRegistry   spec: 'latest',
+406 silly mapToRegistry   type: 'tag' }
+407 silly mapToRegistry uri https://registry.npmjs.org/unpipe
+408 verbose addNameRange registry:https://registry.npmjs.org/unpipe not in flight; fetching
+409 verbose get https://registry.npmjs.org/unpipe not expired, no request
+410 silly addNameRange number 2 { name: 'unpipe', range: '>=1.0.0 <1.1.0', hasData: true }
+411 silly addNameRange versions [ 'unpipe', [ '1.0.0' ] ]
+412 silly addNamed unpipe@1.0.0
+413 verbose addNamed "1.0.0" is a plain semver version for unpipe
+414 silly mapToRegistry name unpipe
+415 silly mapToRegistry using default registry
+416 silly mapToRegistry registry https://registry.npmjs.org/
+417 silly mapToRegistry data Result {
+417 silly mapToRegistry   raw: 'unpipe',
+417 silly mapToRegistry   scope: null,
+417 silly mapToRegistry   escapedName: 'unpipe',
+417 silly mapToRegistry   name: 'unpipe',
+417 silly mapToRegistry   rawSpec: '',
+417 silly mapToRegistry   spec: 'latest',
+417 silly mapToRegistry   type: 'tag' }
+418 silly mapToRegistry uri https://registry.npmjs.org/unpipe
+419 verbose addRemoteTarball https://registry.npmjs.org/unpipe/-/unpipe-1.0.0.tgz not in flight; adding
+420 verbose addRemoteTarball [ 'https://registry.npmjs.org/unpipe/-/unpipe-1.0.0.tgz',
+420 verbose addRemoteTarball   'b2bf4ee8514aae6165b4817829d21b2ef49904ec' ]
+421 info retry fetch attempt 1 at 11:54:13 AM
+422 info attempt registry request try #1 at 11:54:13 AM
+423 http fetch GET https://registry.npmjs.org/unpipe/-/unpipe-1.0.0.tgz
+424 silly resolveWithNewModule debug@2.6.4 checking installable status
+425 silly cache add args [ 'debug@2.6.4', null ]
+426 verbose cache add spec debug@2.6.4
+427 silly cache add parsed spec Result {
+427 silly cache add   raw: 'debug@2.6.4',
+427 silly cache add   scope: null,
+427 silly cache add   escapedName: 'debug',
+427 silly cache add   name: 'debug',
+427 silly cache add   rawSpec: '2.6.4',
+427 silly cache add   spec: '2.6.4',
+427 silly cache add   type: 'version' }
+428 silly addNamed debug@2.6.4
+429 verbose addNamed "2.6.4" is a plain semver version for debug
+430 silly mapToRegistry name debug
+431 silly mapToRegistry using default registry
+432 silly mapToRegistry registry https://registry.npmjs.org/
+433 silly mapToRegistry data Result {
+433 silly mapToRegistry   raw: 'debug',
+433 silly mapToRegistry   scope: null,
+433 silly mapToRegistry   escapedName: 'debug',
+433 silly mapToRegistry   name: 'debug',
+433 silly mapToRegistry   rawSpec: '',
+433 silly mapToRegistry   spec: 'latest',
+433 silly mapToRegistry   type: 'tag' }
+434 silly mapToRegistry uri https://registry.npmjs.org/debug
+435 verbose addNameVersion registry:https://registry.npmjs.org/debug not in flight; fetching
+436 verbose get https://registry.npmjs.org/debug not expired, no request
+437 silly mapToRegistry name debug
+438 silly mapToRegistry using default registry
+439 silly mapToRegistry registry https://registry.npmjs.org/
+440 silly mapToRegistry data Result {
+440 silly mapToRegistry   raw: 'debug',
+440 silly mapToRegistry   scope: null,
+440 silly mapToRegistry   escapedName: 'debug',
+440 silly mapToRegistry   name: 'debug',
+440 silly mapToRegistry   rawSpec: '',
+440 silly mapToRegistry   spec: 'latest',
+440 silly mapToRegistry   type: 'tag' }
+441 silly mapToRegistry uri https://registry.npmjs.org/debug
+442 verbose addRemoteTarball https://registry.npmjs.org/debug/-/debug-2.6.4.tgz not in flight; adding
+443 verbose addRemoteTarball [ 'https://registry.npmjs.org/debug/-/debug-2.6.4.tgz',
+443 verbose addRemoteTarball   '7586a9b3c39741c0282ae33445c4e8ac74734fe0' ]
+444 info retry fetch attempt 1 at 11:54:13 AM
+445 info attempt registry request try #1 at 11:54:13 AM
+446 http fetch GET https://registry.npmjs.org/debug/-/debug-2.6.4.tgz
+447 http fetch 200 https://registry.npmjs.org/unpipe/-/unpipe-1.0.0.tgz
+448 silly fetchAndShaCheck shasum b2bf4ee8514aae6165b4817829d21b2ef49904ec
+449 verbose addTmpTarball C:\Users\root\AppData\Local\Temp\npm-7572-8d1317d6\registry.npmjs.org\unpipe\-\unpipe-1.0.0.tgz not in flight; adding
+450 verbose addTmpTarball already have metadata; skipping unpack for unpipe@1.0.0
+451 verbose correctMkdir C:\Users\root\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+452 http fetch 200 https://registry.npmjs.org/debug/-/debug-2.6.4.tgz
+453 silly cache afterAdd unpipe@1.0.0
+454 verbose afterAdd C:\Users\root\AppData\Roaming\npm-cache\unpipe\1.0.0\package\package.json not in flight; writing
+455 verbose correctMkdir C:\Users\root\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+456 verbose afterAdd C:\Users\root\AppData\Roaming\npm-cache\unpipe\1.0.0\package\package.json written
+457 silly fetchAndShaCheck shasum 7586a9b3c39741c0282ae33445c4e8ac74734fe0
+458 verbose addTmpTarball C:\Users\root\AppData\Local\Temp\npm-7572-8d1317d6\registry.npmjs.org\debug\-\debug-2.6.4.tgz not in flight; adding
+459 verbose addTmpTarball already have metadata; skipping unpack for debug@2.6.4
+460 verbose correctMkdir C:\Users\root\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+461 silly cache afterAdd debug@2.6.4
+462 verbose afterAdd C:\Users\root\AppData\Roaming\npm-cache\debug\2.6.4\package\package.json not in flight; writing
+463 verbose correctMkdir C:\Users\root\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+464 verbose afterAdd C:\Users\root\AppData\Roaming\npm-cache\debug\2.6.4\package\package.json written
+465 silly fetchNamedPackageData ms
+466 silly mapToRegistry name ms
+467 silly mapToRegistry using default registry
+468 silly mapToRegistry registry https://registry.npmjs.org/
+469 silly mapToRegistry data Result {
+469 silly mapToRegistry   raw: 'ms',
+469 silly mapToRegistry   scope: null,
+469 silly mapToRegistry   escapedName: 'ms',
+469 silly mapToRegistry   name: 'ms',
+469 silly mapToRegistry   rawSpec: '',
+469 silly mapToRegistry   spec: 'latest',
+469 silly mapToRegistry   type: 'tag' }
+470 silly mapToRegistry uri https://registry.npmjs.org/ms
+471 verbose request uri https://registry.npmjs.org/ms
+472 verbose request no auth needed
+473 info attempt registry request try #1 at 11:54:13 AM
+474 http request GET https://registry.npmjs.org/ms
+475 http 200 https://registry.npmjs.org/ms
+476 verbose headers { server: 'nginx/1.10.1',
+476 verbose headers   'content-type': 'application/json',
+476 verbose headers   'last-modified': 'Sat, 06 May 2017 20:50:59 GMT',
+476 verbose headers   etag: 'W/"590e3733-3615"',
+476 verbose headers   'content-encoding': 'gzip',
+476 verbose headers   'cache-control': 'max-age=300',
+476 verbose headers   'content-length': '3495',
+476 verbose headers   'accept-ranges': 'bytes',
+476 verbose headers   date: 'Tue, 09 May 2017 17:54:13 GMT',
+476 verbose headers   via: '1.1 varnish',
+476 verbose headers   age: '33',
+476 verbose headers   connection: 'keep-alive',
+476 verbose headers   'x-served-by': 'cache-den6025-DEN',
+476 verbose headers   'x-cache': 'HIT',
+476 verbose headers   'x-cache-hits': '2',
+476 verbose headers   'x-timer': 'S1494352453.322815,VS0,VE0',
+476 verbose headers   vary: 'Accept-Encoding' }
+477 silly get cb [ 200,
+477 silly get   { server: 'nginx/1.10.1',
+477 silly get     'content-type': 'application/json',
+477 silly get     'last-modified': 'Sat, 06 May 2017 20:50:59 GMT',
+477 silly get     etag: 'W/"590e3733-3615"',
+477 silly get     'content-encoding': 'gzip',
+477 silly get     'cache-control': 'max-age=300',
+477 silly get     'content-length': '3495',
+477 silly get     'accept-ranges': 'bytes',
+477 silly get     date: 'Tue, 09 May 2017 17:54:13 GMT',
+477 silly get     via: '1.1 varnish',
+477 silly get     age: '33',
+477 silly get     connection: 'keep-alive',
+477 silly get     'x-served-by': 'cache-den6025-DEN',
+477 silly get     'x-cache': 'HIT',
+477 silly get     'x-cache-hits': '2',
+477 silly get     'x-timer': 'S1494352453.322815,VS0,VE0',
+477 silly get     vary: 'Accept-Encoding' } ]
+478 verbose get saving ms to C:\Users\root\AppData\Roaming\npm-cache\registry.npmjs.org\ms\.cache.json
+479 verbose correctMkdir C:\Users\root\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+480 silly resolveWithNewModule ms@0.7.3 checking installable status
+481 silly cache add args [ 'ms@0.7.3', null ]
+482 verbose cache add spec ms@0.7.3
+483 silly cache add parsed spec Result {
+483 silly cache add   raw: 'ms@0.7.3',
+483 silly cache add   scope: null,
+483 silly cache add   escapedName: 'ms',
+483 silly cache add   name: 'ms',
+483 silly cache add   rawSpec: '0.7.3',
+483 silly cache add   spec: '0.7.3',
+483 silly cache add   type: 'version' }
+484 silly addNamed ms@0.7.3
+485 verbose addNamed "0.7.3" is a plain semver version for ms
+486 silly mapToRegistry name ms
+487 silly mapToRegistry using default registry
+488 silly mapToRegistry registry https://registry.npmjs.org/
+489 silly mapToRegistry data Result {
+489 silly mapToRegistry   raw: 'ms',
+489 silly mapToRegistry   scope: null,
+489 silly mapToRegistry   escapedName: 'ms',
+489 silly mapToRegistry   name: 'ms',
+489 silly mapToRegistry   rawSpec: '',
+489 silly mapToRegistry   spec: 'latest',
+489 silly mapToRegistry   type: 'tag' }
+490 silly mapToRegistry uri https://registry.npmjs.org/ms
+491 verbose addNameVersion registry:https://registry.npmjs.org/ms not in flight; fetching
+492 verbose get https://registry.npmjs.org/ms not expired, no request
+493 silly mapToRegistry name ms
+494 silly mapToRegistry using default registry
+495 silly mapToRegistry registry https://registry.npmjs.org/
+496 silly mapToRegistry data Result {
+496 silly mapToRegistry   raw: 'ms',
+496 silly mapToRegistry   scope: null,
+496 silly mapToRegistry   escapedName: 'ms',
+496 silly mapToRegistry   name: 'ms',
+496 silly mapToRegistry   rawSpec: '',
+496 silly mapToRegistry   spec: 'latest',
+496 silly mapToRegistry   type: 'tag' }
+497 silly mapToRegistry uri https://registry.npmjs.org/ms
+498 verbose addRemoteTarball https://registry.npmjs.org/ms/-/ms-0.7.3.tgz not in flight; adding
+499 verbose addRemoteTarball [ 'https://registry.npmjs.org/ms/-/ms-0.7.3.tgz',
+499 verbose addRemoteTarball   '708155a5e44e33f5fd0fc53e81d0d40a91be1fff' ]
+500 info retry fetch attempt 1 at 11:54:13 AM
+501 info attempt registry request try #1 at 11:54:13 AM
+502 http fetch GET https://registry.npmjs.org/ms/-/ms-0.7.3.tgz
+503 http fetch 200 https://registry.npmjs.org/ms/-/ms-0.7.3.tgz
+504 silly fetchAndShaCheck shasum 708155a5e44e33f5fd0fc53e81d0d40a91be1fff
+505 verbose addTmpTarball C:\Users\root\AppData\Local\Temp\npm-7572-8d1317d6\registry.npmjs.org\ms\-\ms-0.7.3.tgz not in flight; adding
+506 verbose addTmpTarball already have metadata; skipping unpack for ms@0.7.3
+507 verbose correctMkdir C:\Users\root\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+508 silly cache afterAdd ms@0.7.3
+509 verbose afterAdd C:\Users\root\AppData\Roaming\npm-cache\ms\0.7.3\package\package.json not in flight; writing
+510 verbose correctMkdir C:\Users\root\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+511 verbose afterAdd C:\Users\root\AppData\Roaming\npm-cache\ms\0.7.3\package\package.json written
+512 silly loadAllDepsIntoIdealTree Finishing
+513 silly loadIdealTree Finishing
+514 silly currentTree cartjs@0.0.1
+514 silly currentTree +-- accepts@1.3.3
+514 silly currentTree +-- array-flatten@1.1.1
+514 silly currentTree +-- bignumber.js@3.1.2
+514 silly currentTree +-- content-disposition@0.5.2
+514 silly currentTree +-- content-type@1.0.2
+514 silly currentTree +-- cookie-signature@1.0.6
+514 silly currentTree +-- cookie@0.3.1
+514 silly currentTree +-- core-util-is@1.0.2
+514 silly currentTree +-- debug@2.6.1
+514 silly currentTree +-- depd@1.1.0
+514 silly currentTree +-- destroy@1.0.4
+514 silly currentTree +-- ee-first@1.1.1
+514 silly currentTree +-- encodeurl@1.0.1
+514 silly currentTree +-- escape-html@1.0.3
+514 silly currentTree +-- etag@1.8.0
+514 silly currentTree +-- forwarded@0.1.0
+514 silly currentTree +-- fresh@0.5.0
+514 silly currentTree +-- http-errors@1.6.1
+514 silly currentTree +-- inherits@2.0.3
+514 silly currentTree +-- ipaddr.js@1.3.0
+514 silly currentTree +-- isarray@0.0.1
+514 silly currentTree +-- media-typer@0.3.0
+514 silly currentTree +-- merge-descriptors@1.0.1
+514 silly currentTree +-- methods@1.1.2
+514 silly currentTree +-- mime-db@1.27.0
+514 silly currentTree +-- mime-types@2.1.15
+514 silly currentTree +-- mime@1.3.4
+514 silly currentTree +-- ms@0.7.2
+514 silly currentTree +-- negotiator@0.6.1
+514 silly currentTree +-- on-finished@2.3.0
+514 silly currentTree +-- parseurl@1.3.1
+514 silly currentTree +-- path-to-regexp@0.1.7
+514 silly currentTree +-- proxy-addr@1.1.4
+514 silly currentTree +-- qs@6.3.1
+514 silly currentTree +-- range-parser@1.2.0
+514 silly currentTree +-- readable-stream@1.1.14
+514 silly currentTree +-- send@0.15.0
+514 silly currentTree +-- serve-static@1.12.0
+514 silly currentTree +-- setprototypeof@1.0.3
+514 silly currentTree +-- sqlstring@2.2.0
+514 silly currentTree +-- statuses@1.3.1
+514 silly currentTree +-- string_decoder@0.10.31
+514 silly currentTree `-- type-is@1.6.15
+515 silly idealTree cartjs@0.0.1
+515 silly idealTree +-- accepts@1.3.3
+515 silly idealTree +-- array-flatten@1.1.1
+515 silly idealTree +-- bignumber.js@3.1.2
+515 silly idealTree +-- content-disposition@0.5.2
+515 silly idealTree +-- content-type@1.0.2
+515 silly idealTree +-- cookie-signature@1.0.6
+515 silly idealTree +-- cookie@0.3.1
+515 silly idealTree +-- core-util-is@1.0.2
+515 silly idealTree +-- debug@2.6.1
+515 silly idealTree +-- depd@1.1.0
+515 silly idealTree +-- destroy@1.0.4
+515 silly idealTree +-- ee-first@1.1.1
+515 silly idealTree +-- encodeurl@1.0.1
+515 silly idealTree +-- escape-html@1.0.3
+515 silly idealTree +-- etag@1.8.0
+515 silly idealTree +-- express-myconnection@1.0.4
+515 silly idealTree +-- express@4.15.0
+515 silly idealTree +-- finalhandler@1.0.2
+515 silly idealTree | +-- debug@2.6.4
+515 silly idealTree | `-- ms@0.7.3
+515 silly idealTree +-- forwarded@0.1.0
+515 silly idealTree +-- fresh@0.5.0
+515 silly idealTree +-- http-errors@1.6.1
+515 silly idealTree +-- inherits@2.0.3
+515 silly idealTree +-- ipaddr.js@1.3.0
+515 silly idealTree +-- isarray@0.0.1
+515 silly idealTree +-- media-typer@0.3.0
+515 silly idealTree +-- merge-descriptors@1.0.1
+515 silly idealTree +-- methods@1.1.2
+515 silly idealTree +-- mime-db@1.27.0
+515 silly idealTree +-- mime-types@2.1.15
+515 silly idealTree +-- mime@1.3.4
+515 silly idealTree +-- ms@0.7.2
+515 silly idealTree +-- mysql@2.13.0
+515 silly idealTree +-- negotiator@0.6.1
+515 silly idealTree +-- on-finished@2.3.0
+515 silly idealTree +-- parseurl@1.3.1
+515 silly idealTree +-- path-to-regexp@0.1.7
+515 silly idealTree +-- proxy-addr@1.1.4
+515 silly idealTree +-- qs@6.3.1
+515 silly idealTree +-- range-parser@1.2.0
+515 silly idealTree +-- readable-stream@1.1.14
+515 silly idealTree +-- secure-random-string@1.0.0
+515 silly idealTree +-- send@0.15.0
+515 silly idealTree +-- serve-static@1.12.0
+515 silly idealTree +-- setprototypeof@1.0.3
+515 silly idealTree +-- sqlstring@2.2.0
+515 silly idealTree +-- statuses@1.3.1
+515 silly idealTree +-- string_decoder@0.10.31
+515 silly idealTree +-- type-is@1.6.15
+515 silly idealTree +-- unpipe@1.0.0
+515 silly idealTree +-- utils-merge@1.0.0
+515 silly idealTree `-- vary@1.1.1
+516 silly generateActionsToTake Starting
+517 silly install generateActionsToTake
+518 silly generateActionsToTake Finishing
+519 silly diffTrees action count 10
+520 silly diffTrees add ms@0.7.3
+521 silly diffTrees add debug@2.6.4
+522 silly diffTrees add unpipe@1.0.0
+523 silly diffTrees add finalhandler@1.0.2
+524 silly diffTrees add utils-merge@1.0.0
+525 silly diffTrees add vary@1.1.1
+526 silly diffTrees add express@4.15.0
+527 silly diffTrees add express-myconnection@1.0.4
+528 silly diffTrees add mysql@2.13.0
+529 silly diffTrees add secure-random-string@1.0.0
+530 silly decomposeActions action count 80
+531 silly decomposeActions fetch ms@0.7.3
+532 silly decomposeActions extract ms@0.7.3
+533 silly decomposeActions test ms@0.7.3
+534 silly decomposeActions preinstall ms@0.7.3
+535 silly decomposeActions build ms@0.7.3
+536 silly decomposeActions install ms@0.7.3
+537 silly decomposeActions postinstall ms@0.7.3
+538 silly decomposeActions finalize ms@0.7.3
+539 silly decomposeActions fetch debug@2.6.4
+540 silly decomposeActions extract debug@2.6.4
+541 silly decomposeActions test debug@2.6.4
+542 silly decomposeActions preinstall debug@2.6.4
+543 silly decomposeActions build debug@2.6.4
+544 silly decomposeActions install debug@2.6.4
+545 silly decomposeActions postinstall debug@2.6.4
+546 silly decomposeActions finalize debug@2.6.4
+547 silly decomposeActions fetch unpipe@1.0.0
+548 silly decomposeActions extract unpipe@1.0.0
+549 silly decomposeActions test unpipe@1.0.0
+550 silly decomposeActions preinstall unpipe@1.0.0
+551 silly decomposeActions build unpipe@1.0.0
+552 silly decomposeActions install unpipe@1.0.0
+553 silly decomposeActions postinstall unpipe@1.0.0
+554 silly decomposeActions finalize unpipe@1.0.0
+555 silly decomposeActions fetch finalhandler@1.0.2
+556 silly decomposeActions extract finalhandler@1.0.2
+557 silly decomposeActions test finalhandler@1.0.2
+558 silly decomposeActions preinstall finalhandler@1.0.2
+559 silly decomposeActions build finalhandler@1.0.2
+560 silly decomposeActions install finalhandler@1.0.2
+561 silly decomposeActions postinstall finalhandler@1.0.2
+562 silly decomposeActions finalize finalhandler@1.0.2
+563 silly decomposeActions fetch utils-merge@1.0.0
+564 silly decomposeActions extract utils-merge@1.0.0
+565 silly decomposeActions test utils-merge@1.0.0
+566 silly decomposeActions preinstall utils-merge@1.0.0
+567 silly decomposeActions build utils-merge@1.0.0
+568 silly decomposeActions install utils-merge@1.0.0
+569 silly decomposeActions postinstall utils-merge@1.0.0
+570 silly decomposeActions finalize utils-merge@1.0.0
+571 silly decomposeActions fetch vary@1.1.1
+572 silly decomposeActions extract vary@1.1.1
+573 silly decomposeActions test vary@1.1.1
+574 silly decomposeActions preinstall vary@1.1.1
+575 silly decomposeActions build vary@1.1.1
+576 silly decomposeActions install vary@1.1.1
+577 silly decomposeActions postinstall vary@1.1.1
+578 silly decomposeActions finalize vary@1.1.1
+579 silly decomposeActions fetch express@4.15.0
+580 silly decomposeActions extract express@4.15.0
+581 silly decomposeActions test express@4.15.0
+582 silly decomposeActions preinstall express@4.15.0
+583 silly decomposeActions build express@4.15.0
+584 silly decomposeActions install express@4.15.0
+585 silly decomposeActions postinstall express@4.15.0
+586 silly decomposeActions finalize express@4.15.0
+587 silly decomposeActions fetch express-myconnection@1.0.4
+588 silly decomposeActions extract express-myconnection@1.0.4
+589 silly decomposeActions test express-myconnection@1.0.4
+590 silly decomposeActions preinstall express-myconnection@1.0.4
+591 silly decomposeActions build express-myconnection@1.0.4
+592 silly decomposeActions install express-myconnection@1.0.4
+593 silly decomposeActions postinstall express-myconnection@1.0.4
+594 silly decomposeActions finalize express-myconnection@1.0.4
+595 silly decomposeActions fetch mysql@2.13.0
+596 silly decomposeActions extract mysql@2.13.0
+597 silly decomposeActions test mysql@2.13.0
+598 silly decomposeActions preinstall mysql@2.13.0
+599 silly decomposeActions build mysql@2.13.0
+600 silly decomposeActions install mysql@2.13.0
+601 silly decomposeActions postinstall mysql@2.13.0
+602 silly decomposeActions finalize mysql@2.13.0
+603 silly decomposeActions fetch secure-random-string@1.0.0
+604 silly decomposeActions extract secure-random-string@1.0.0
+605 silly decomposeActions test secure-random-string@1.0.0
+606 silly decomposeActions preinstall secure-random-string@1.0.0
+607 silly decomposeActions build secure-random-string@1.0.0
+608 silly decomposeActions install secure-random-string@1.0.0
+609 silly decomposeActions postinstall secure-random-string@1.0.0
+610 silly decomposeActions finalize secure-random-string@1.0.0
+611 silly runTopLevelLifecycles Starting
+612 silly install runPreinstallTopLevelLifecycles
+613 silly preinstall cartjs@0.0.1 D:\projects\SpringMusic\cart\cartjs-0c695117
+614 info lifecycle cartjs@0.0.1~preinstall: cartjs@0.0.1
+615 silly lifecycle cartjs@0.0.1~preinstall: no script for preinstall, continuing
+616 silly executeActions Starting
+617 silly install executeActions
+618 silly doSerial global-install 0
+619 silly doParallel fetch 10
+620 verbose correctMkdir C:\Users\root\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+621 verbose makeDirectory C:\Users\root\AppData\Roaming\npm-cache\_locks creation not in flight; initializing
+622 verbose makeCacheDir UID & GID are irrelevant on win32
+623 verbose lock using C:\Users\root\AppData\Roaming\npm-cache\_locks\staging-671583abab9765bf.lock for D:\projects\SpringMusic\cart\node_modules\.staging
+624 silly doParallel extract 10
+625 silly extract ms@0.7.3
+626 silly extract debug@2.6.4
+627 silly extract unpipe@1.0.0
+628 silly extract finalhandler@1.0.2
+629 silly extract utils-merge@1.0.0
+630 silly extract vary@1.1.1
+631 silly extract express@4.15.0
+632 silly extract express-myconnection@1.0.4
+633 silly extract mysql@2.13.0
+634 silly extract secure-random-string@1.0.0
+635 verbose unbuild node_modules\.staging\ms-5befefb2
+636 verbose unbuild node_modules\.staging\unpipe-6256ce8d
+637 verbose unbuild node_modules\.staging\debug-be778e4a
+638 verbose unbuild node_modules\.staging\finalhandler-131d2533
+639 verbose unbuild node_modules\.staging\vary-35a1d33b
+640 verbose unbuild node_modules\.staging\utils-merge-a0f42690
+641 verbose unbuild node_modules\.staging\express-3d1e84a8
+642 verbose unbuild node_modules\.staging\express-myconnection-8c0b7cb4
+643 verbose unbuild node_modules\.staging\mysql-3e046d8c
+644 verbose unbuild node_modules\.staging\secure-random-string-e4849ee3
+645 silly gentlyRm D:\projects\SpringMusic\cart\node_modules\.staging\unpipe-6256ce8d is being purged from base D:\projects\SpringMusic\cart
+646 verbose gentlyRm don't care about contents; nuking D:\projects\SpringMusic\cart\node_modules\.staging\unpipe-6256ce8d
+647 silly gentlyRm D:\projects\SpringMusic\cart\node_modules\.staging\ms-5befefb2 is being purged from base D:\projects\SpringMusic\cart
+648 verbose gentlyRm don't care about contents; nuking D:\projects\SpringMusic\cart\node_modules\.staging\ms-5befefb2
+649 silly gentlyRm D:\projects\SpringMusic\cart\node_modules\.staging\debug-be778e4a is being purged from base D:\projects\SpringMusic\cart
+650 verbose gentlyRm don't care about contents; nuking D:\projects\SpringMusic\cart\node_modules\.staging\debug-be778e4a
+651 silly gentlyRm D:\projects\SpringMusic\cart\node_modules\.staging\finalhandler-131d2533 is being purged from base D:\projects\SpringMusic\cart
+652 verbose gentlyRm don't care about contents; nuking D:\projects\SpringMusic\cart\node_modules\.staging\finalhandler-131d2533
+653 silly gentlyRm D:\projects\SpringMusic\cart\node_modules\.staging\vary-35a1d33b is being purged from base D:\projects\SpringMusic\cart
+654 verbose gentlyRm don't care about contents; nuking D:\projects\SpringMusic\cart\node_modules\.staging\vary-35a1d33b
+655 silly gentlyRm D:\projects\SpringMusic\cart\node_modules\.staging\utils-merge-a0f42690 is being purged from base D:\projects\SpringMusic\cart
+656 verbose gentlyRm don't care about contents; nuking D:\projects\SpringMusic\cart\node_modules\.staging\utils-merge-a0f42690
+657 silly gentlyRm D:\projects\SpringMusic\cart\node_modules\.staging\express-myconnection-8c0b7cb4 is being purged from base D:\projects\SpringMusic\cart
+658 verbose gentlyRm don't care about contents; nuking D:\projects\SpringMusic\cart\node_modules\.staging\express-myconnection-8c0b7cb4
+659 silly gentlyRm D:\projects\SpringMusic\cart\node_modules\.staging\mysql-3e046d8c is being purged from base D:\projects\SpringMusic\cart
+660 verbose gentlyRm don't care about contents; nuking D:\projects\SpringMusic\cart\node_modules\.staging\mysql-3e046d8c
+661 silly gentlyRm D:\projects\SpringMusic\cart\node_modules\.staging\express-3d1e84a8 is being purged from base D:\projects\SpringMusic\cart
+662 verbose gentlyRm don't care about contents; nuking D:\projects\SpringMusic\cart\node_modules\.staging\express-3d1e84a8
+663 verbose tar unpack C:\Users\root\AppData\Roaming\npm-cache\unpipe\1.0.0\package.tgz
+664 verbose tar unpacking to D:\projects\SpringMusic\cart\node_modules\.staging\unpipe-6256ce8d
+665 silly gentlyRm D:\projects\SpringMusic\cart\node_modules\.staging\unpipe-6256ce8d is being purged
+666 verbose gentlyRm don't care about contents; nuking D:\projects\SpringMusic\cart\node_modules\.staging\unpipe-6256ce8d
+667 verbose tar unpack C:\Users\root\AppData\Roaming\npm-cache\ms\0.7.3\package.tgz
+668 verbose tar unpacking to D:\projects\SpringMusic\cart\node_modules\.staging\ms-5befefb2
+669 silly gentlyRm D:\projects\SpringMusic\cart\node_modules\.staging\ms-5befefb2 is being purged
+670 verbose gentlyRm don't care about contents; nuking D:\projects\SpringMusic\cart\node_modules\.staging\ms-5befefb2
+671 verbose tar unpack C:\Users\root\AppData\Roaming\npm-cache\debug\2.6.4\package.tgz
+672 verbose tar unpacking to D:\projects\SpringMusic\cart\node_modules\.staging\debug-be778e4a
+673 silly gentlyRm D:\projects\SpringMusic\cart\node_modules\.staging\debug-be778e4a is being purged
+674 verbose gentlyRm don't care about contents; nuking D:\projects\SpringMusic\cart\node_modules\.staging\debug-be778e4a
+675 verbose tar unpack C:\Users\root\AppData\Roaming\npm-cache\finalhandler\1.0.2\package.tgz
+676 verbose tar unpacking to D:\projects\SpringMusic\cart\node_modules\.staging\finalhandler-131d2533
+677 silly gentlyRm D:\projects\SpringMusic\cart\node_modules\.staging\finalhandler-131d2533 is being purged
+678 verbose gentlyRm don't care about contents; nuking D:\projects\SpringMusic\cart\node_modules\.staging\finalhandler-131d2533
+679 verbose tar unpack C:\Users\root\AppData\Roaming\npm-cache\vary\1.1.1\package.tgz
+680 verbose tar unpacking to D:\projects\SpringMusic\cart\node_modules\.staging\vary-35a1d33b
+681 silly gentlyRm D:\projects\SpringMusic\cart\node_modules\.staging\vary-35a1d33b is being purged
+682 verbose gentlyRm don't care about contents; nuking D:\projects\SpringMusic\cart\node_modules\.staging\vary-35a1d33b
+683 silly gentlyRm D:\projects\SpringMusic\cart\node_modules\.staging\secure-random-string-e4849ee3 is being purged from base D:\projects\SpringMusic\cart
+684 verbose gentlyRm don't care about contents; nuking D:\projects\SpringMusic\cart\node_modules\.staging\secure-random-string-e4849ee3
+685 verbose tar unpack C:\Users\root\AppData\Roaming\npm-cache\utils-merge\1.0.0\package.tgz
+686 verbose tar unpacking to D:\projects\SpringMusic\cart\node_modules\.staging\utils-merge-a0f42690
+687 silly gentlyRm D:\projects\SpringMusic\cart\node_modules\.staging\utils-merge-a0f42690 is being purged
+688 verbose gentlyRm don't care about contents; nuking D:\projects\SpringMusic\cart\node_modules\.staging\utils-merge-a0f42690
+689 verbose tar unpack C:\Users\root\AppData\Roaming\npm-cache\express-myconnection\1.0.4\package.tgz
+690 verbose tar unpacking to D:\projects\SpringMusic\cart\node_modules\.staging\express-myconnection-8c0b7cb4
+691 silly gentlyRm D:\projects\SpringMusic\cart\node_modules\.staging\express-myconnection-8c0b7cb4 is being purged
+692 verbose gentlyRm don't care about contents; nuking D:\projects\SpringMusic\cart\node_modules\.staging\express-myconnection-8c0b7cb4
+693 verbose tar unpack C:\Users\root\AppData\Roaming\npm-cache\mysql\2.13.0\package.tgz
+694 verbose tar unpacking to D:\projects\SpringMusic\cart\node_modules\.staging\mysql-3e046d8c
+695 silly gentlyRm D:\projects\SpringMusic\cart\node_modules\.staging\mysql-3e046d8c is being purged
+696 verbose gentlyRm don't care about contents; nuking D:\projects\SpringMusic\cart\node_modules\.staging\mysql-3e046d8c
+697 verbose tar unpack C:\Users\root\AppData\Roaming\npm-cache\express\4.15.0\package.tgz
+698 verbose tar unpacking to D:\projects\SpringMusic\cart\node_modules\.staging\express-3d1e84a8
+699 silly gentlyRm D:\projects\SpringMusic\cart\node_modules\.staging\express-3d1e84a8 is being purged
+700 verbose gentlyRm don't care about contents; nuking D:\projects\SpringMusic\cart\node_modules\.staging\express-3d1e84a8
+701 silly gunzTarPerm modes [ '777', '666' ]
+702 silly gunzTarPerm modes [ '777', '666' ]
+703 silly gunzTarPerm modes [ '777', '666' ]
+704 silly gunzTarPerm modes [ '777', '666' ]
+705 silly gunzTarPerm modes [ '777', '666' ]
+706 verbose tar unpack C:\Users\root\AppData\Roaming\npm-cache\secure-random-string\1.0.0\package.tgz
+707 verbose tar unpacking to D:\projects\SpringMusic\cart\node_modules\.staging\secure-random-string-e4849ee3
+708 silly gentlyRm D:\projects\SpringMusic\cart\node_modules\.staging\secure-random-string-e4849ee3 is being purged
+709 verbose gentlyRm don't care about contents; nuking D:\projects\SpringMusic\cart\node_modules\.staging\secure-random-string-e4849ee3
+710 silly gunzTarPerm modes [ '777', '666' ]
+711 silly gunzTarPerm modes [ '777', '666' ]
+712 silly gunzTarPerm modes [ '777', '666' ]
+713 silly gunzTarPerm modes [ '777', '666' ]
+714 silly gunzTarPerm modes [ '777', '666' ]
+715 silly gunzTarPerm extractEntry package.json
+716 silly gunzTarPerm extractEntry package.json
+717 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+718 silly gunzTarPerm extractEntry package.json
+719 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+720 silly gunzTarPerm extractEntry package.json
+721 silly gunzTarPerm extractEntry package.json
+722 silly gunzTarPerm extractEntry package.json
+723 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+724 silly gunzTarPerm extractEntry package.json
+725 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+726 silly gunzTarPerm extractEntry package.json
+727 silly gunzTarPerm extractEntry package.json
+728 silly gunzTarPerm extractEntry package.json
+729 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+730 silly gunzTarPerm extractEntry README.md
+731 silly gunzTarPerm extractEntry LICENSE
+732 silly gunzTarPerm extractEntry index.js
+733 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+734 silly gunzTarPerm extractEntry license.md
+735 silly gunzTarPerm modified mode [ 'license.md', 420, 438 ]
+736 silly gunzTarPerm extractEntry .npmignore
+737 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+738 silly gunzTarPerm extractEntry README.md
+739 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+740 silly gunzTarPerm extractEntry README.md
+741 silly gunzTarPerm extractEntry LICENSE
+742 silly gunzTarPerm extractEntry README.md
+743 silly gunzTarPerm extractEntry LICENSE
+744 silly gunzTarPerm extractEntry README.md
+745 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+746 silly gunzTarPerm extractEntry LICENSE
+747 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+748 silly gunzTarPerm extractEntry .npmignore
+749 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+750 silly gunzTarPerm extractEntry README.md
+751 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+752 silly gunzTarPerm extractEntry index.js
+753 silly gunzTarPerm extractEntry Changes.md
+754 silly gunzTarPerm extractEntry LICENSE
+755 silly gunzTarPerm extractEntry index.js
+756 silly gunzTarPerm extractEntry .npmignore
+757 silly gunzTarPerm modified mode [ '.npmignore', 436, 438 ]
+758 silly gunzTarPerm extractEntry README.md
+759 silly gunzTarPerm modified mode [ 'README.md', 436, 438 ]
+760 silly gunzTarPerm extractEntry index.js
+761 silly gunzTarPerm extractEntry HISTORY.md
+762 silly gunzTarPerm extractEntry LICENSE
+763 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+764 silly gunzTarPerm extractEntry index.js
+765 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+766 silly gunzTarPerm extractEntry examples/single/package.json
+767 silly gunzTarPerm modified mode [ 'examples/single/package.json', 420, 438 ]
+768 silly gunzTarPerm extractEntry examples/single/app.js
+769 silly gunzTarPerm modified mode [ 'examples/single/app.js', 420, 438 ]
+770 silly gunzTarPerm extractEntry examples/single/routes/index.js
+771 silly gunzTarPerm modified mode [ 'examples/single/routes/index.js', 420, 438 ]
+772 silly gunzTarPerm extractEntry examples/single/views/index.ejs
+773 silly gunzTarPerm modified mode [ 'examples/single/views/index.ejs', 420, 438 ]
+774 silly gunzTarPerm extractEntry lib/express-myconnection.js
+775 silly gunzTarPerm modified mode [ 'lib/express-myconnection.js', 420, 438 ]
+776 silly gunzTarPerm extractEntry index.js
+777 silly gunzTarPerm extractEntry HISTORY.md
+778 silly gunzTarPerm extractEntry index.js
+779 silly gunzTarPerm extractEntry HISTORY.md
+780 silly gunzTarPerm extractEntry History.md
+781 silly gunzTarPerm extractEntry Readme.md
+782 silly gunzTarPerm extractEntry lib/application.js
+783 silly gunzTarPerm extractEntry lib/express.js
+784 silly gunzTarPerm extractEntry lib/request.js
+785 silly gunzTarPerm extractEntry lib/response.js
+786 silly gunzTarPerm extractEntry lib/utils.js
+787 silly gunzTarPerm extractEntry lib/view.js
+788 silly gunzTarPerm extractEntry lib/middleware/init.js
+789 silly gunzTarPerm extractEntry lib/middleware/query.js
+790 silly gunzTarPerm extractEntry lib/router/index.js
+791 silly gunzTarPerm extractEntry lib/router/layer.js
+792 silly gunzTarPerm extractEntry lib/router/route.js
+793 silly gunzTarPerm extractEntry LICENSE
+794 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+795 silly gunzTarPerm extractEntry readme.md
+796 silly gunzTarPerm modified mode [ 'readme.md', 420, 438 ]
+797 silly gunzTarPerm extractEntry License
+798 silly gunzTarPerm extractEntry index.js
+799 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+800 silly gunzTarPerm extractEntry .travis.yml
+801 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+802 silly gunzTarPerm extractEntry tests.js
+803 silly gunzTarPerm modified mode [ 'tests.js', 436, 438 ]
+804 silly gunzTarPerm extractEntry CHANGELOG.md
+805 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 438 ]
+806 silly gunzTarPerm extractEntry karma.conf.js
+807 silly gunzTarPerm modified mode [ 'karma.conf.js', 420, 438 ]
+808 silly gunzTarPerm extractEntry node.js
+809 silly gunzTarPerm modified mode [ 'node.js', 420, 438 ]
+810 silly gunzTarPerm extractEntry component.json
+811 silly gunzTarPerm modified mode [ 'component.json', 420, 438 ]
+812 silly gunzTarPerm extractEntry Readme.md
+813 silly gunzTarPerm extractEntry lib/Connection.js
+814 silly gunzTarPerm extractEntry lib/ConnectionConfig.js
+815 silly gunzTarPerm extractEntry lib/secure-random-string.js
+816 silly gunzTarPerm modified mode [ 'lib/secure-random-string.js', 436, 438 ]
+817 silly gunzTarPerm extractEntry Makefile
+818 silly gunzTarPerm modified mode [ 'Makefile', 420, 438 ]
+819 silly gunzTarPerm extractEntry lib/Pool.js
+820 silly gunzTarPerm extractEntry lib/PoolCluster.js
+821 silly gunzTarPerm extractEntry lib/PoolConfig.js
+822 silly gunzTarPerm extractEntry .coveralls.yml
+823 silly gunzTarPerm modified mode [ '.coveralls.yml', 420, 438 ]
+824 silly gunzTarPerm extractEntry .eslintrc
+825 silly gunzTarPerm modified mode [ '.eslintrc', 420, 438 ]
+826 silly gunzTarPerm extractEntry lib/PoolConnection.js
+827 silly gunzTarPerm extractEntry lib/PoolNamespace.js
+828 silly gunzTarPerm extractEntry lib/PoolSelector.js
+829 silly gunzTarPerm extractEntry lib/protocol/Auth.js
+830 silly gunzTarPerm extractEntry .travis.yml
+831 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+832 silly gunzTarPerm extractEntry CHANGELOG.md
+833 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 438 ]
+834 silly gunzTarPerm extractEntry lib/protocol/PacketHeader.js
+835 silly gunzTarPerm extractEntry lib/protocol/PacketWriter.js
+836 silly gentlyRm D:\projects\SpringMusic\cart\node_modules\.staging\unpipe-6256ce8d\node_modules is being purged
+837 verbose gentlyRm don't care about contents; nuking D:\projects\SpringMusic\cart\node_modules\.staging\unpipe-6256ce8d\node_modules
+838 silly gentlyRm D:\projects\SpringMusic\cart\node_modules\.staging\ms-5befefb2\node_modules is being purged
+839 verbose gentlyRm don't care about contents; nuking D:\projects\SpringMusic\cart\node_modules\.staging\ms-5befefb2\node_modules
+840 silly gunzTarPerm extractEntry src/browser.js
+841 silly gunzTarPerm modified mode [ 'src/browser.js', 420, 438 ]
+842 silly gunzTarPerm extractEntry src/debug.js
+843 silly gunzTarPerm modified mode [ 'src/debug.js', 420, 438 ]
+844 silly gentlyRm D:\projects\SpringMusic\cart\node_modules\.staging\vary-35a1d33b\node_modules is being purged
+845 verbose gentlyRm don't care about contents; nuking D:\projects\SpringMusic\cart\node_modules\.staging\vary-35a1d33b\node_modules
+846 silly gentlyRm D:\projects\SpringMusic\cart\node_modules\.staging\utils-merge-a0f42690\node_modules is being purged
+847 verbose gentlyRm don't care about contents; nuking D:\projects\SpringMusic\cart\node_modules\.staging\utils-merge-a0f42690\node_modules
+848 silly gentlyRm D:\projects\SpringMusic\cart\node_modules\.staging\finalhandler-131d2533\node_modules is being purged
+849 verbose gentlyRm don't care about contents; nuking D:\projects\SpringMusic\cart\node_modules\.staging\finalhandler-131d2533\node_modules
+850 silly gunzTarPerm extractEntry lib/protocol/Parser.js
+851 silly gunzTarPerm extractEntry lib/protocol/BufferList.js
+852 silly gunzTarPerm extractEntry src/index.js
+853 silly gunzTarPerm modified mode [ 'src/index.js', 420, 438 ]
+854 silly gunzTarPerm extractEntry src/node.js
+855 silly gunzTarPerm modified mode [ 'src/node.js', 420, 438 ]
+856 silly gentlyRm D:\projects\SpringMusic\cart\node_modules\.staging\secure-random-string-e4849ee3\node_modules is being purged
+857 verbose gentlyRm don't care about contents; nuking D:\projects\SpringMusic\cart\node_modules\.staging\secure-random-string-e4849ee3\node_modules
+858 silly gentlyRm D:\projects\SpringMusic\cart\node_modules\.staging\express-myconnection-8c0b7cb4\node_modules is being purged
+859 verbose gentlyRm don't care about contents; nuking D:\projects\SpringMusic\cart\node_modules\.staging\express-myconnection-8c0b7cb4\node_modules
+860 silly gunzTarPerm extractEntry lib/protocol/ResultSet.js
+861 silly gunzTarPerm extractEntry lib/protocol/SqlString.js
+862 silly gunzTarPerm extractEntry lib/protocol/Protocol.js
+863 silly gunzTarPerm extractEntry lib/protocol/constants/charsets.js
+864 silly gunzTarPerm extractEntry lib/protocol/constants/client.js
+865 silly gunzTarPerm extractEntry lib/protocol/constants/errors.js
+866 silly gunzTarPerm extractEntry lib/protocol/constants/field_flags.js
+867 silly gunzTarPerm extractEntry lib/protocol/constants/server_status.js
+868 silly gunzTarPerm extractEntry lib/protocol/constants/ssl_profiles.js
+869 silly gunzTarPerm extractEntry lib/protocol/constants/types.js
+870 silly gunzTarPerm extractEntry lib/protocol/packets/ClientAuthenticationPacket.js
+871 silly gunzTarPerm extractEntry lib/protocol/packets/EofPacket.js
+872 silly gunzTarPerm extractEntry lib/protocol/packets/ErrorPacket.js
+873 silly gunzTarPerm extractEntry lib/protocol/packets/Field.js
+874 silly gunzTarPerm extractEntry lib/protocol/packets/EmptyPacket.js
+875 silly gunzTarPerm extractEntry lib/protocol/packets/HandshakeInitializationPacket.js
+876 silly gunzTarPerm extractEntry lib/protocol/packets/LocalDataFilePacket.js
+877 silly gentlyRm D:\projects\SpringMusic\cart\node_modules\.staging\debug-be778e4a\node_modules is being purged
+878 verbose gentlyRm don't care about contents; nuking D:\projects\SpringMusic\cart\node_modules\.staging\debug-be778e4a\node_modules
+879 silly gunzTarPerm extractEntry lib/protocol/packets/OkPacket.js
+880 silly gunzTarPerm extractEntry lib/protocol/packets/OldPasswordPacket.js
+881 silly gunzTarPerm extractEntry lib/protocol/packets/ResultSetHeaderPacket.js
+882 silly gunzTarPerm extractEntry lib/protocol/packets/ComStatisticsPacket.js
+883 silly gunzTarPerm extractEntry lib/protocol/packets/RowDataPacket.js
+884 silly gunzTarPerm extractEntry lib/protocol/packets/ComQuitPacket.js
+885 silly gunzTarPerm extractEntry lib/protocol/packets/SSLRequestPacket.js
+886 silly gunzTarPerm extractEntry lib/protocol/packets/ComQueryPacket.js
+887 silly gunzTarPerm extractEntry lib/protocol/packets/StatisticsPacket.js
+888 silly gunzTarPerm extractEntry lib/protocol/packets/ComPingPacket.js
+889 silly gunzTarPerm extractEntry lib/protocol/packets/UseOldPasswordPacket.js
+890 silly gunzTarPerm extractEntry lib/protocol/packets/ComChangeUserPacket.js
+891 silly gentlyRm D:\projects\SpringMusic\cart\node_modules\.staging\express-3d1e84a8\node_modules is being purged
+892 verbose gentlyRm don't care about contents; nuking D:\projects\SpringMusic\cart\node_modules\.staging\express-3d1e84a8\node_modules
+893 silly gunzTarPerm extractEntry lib/protocol/packets/index.js
+894 silly gunzTarPerm extractEntry lib/protocol/packets/FieldPacket.js
+895 silly gunzTarPerm extractEntry lib/protocol/sequences/ChangeUser.js
+896 silly gunzTarPerm extractEntry lib/protocol/sequences/Handshake.js
+897 silly gunzTarPerm extractEntry lib/protocol/sequences/Ping.js
+898 silly gunzTarPerm extractEntry lib/protocol/sequences/Query.js
+899 silly gunzTarPerm extractEntry lib/protocol/sequences/Quit.js
+900 silly gunzTarPerm extractEntry lib/protocol/sequences/Sequence.js
+901 silly gunzTarPerm extractEntry lib/protocol/sequences/Statistics.js
+902 silly gunzTarPerm extractEntry lib/protocol/sequences/index.js
+903 silly gentlyRm D:\projects\SpringMusic\cart\node_modules\.staging\mysql-3e046d8c\node_modules is being purged
+904 verbose gentlyRm don't care about contents; nuking D:\projects\SpringMusic\cart\node_modules\.staging\mysql-3e046d8c\node_modules
+905 silly doParallel preinstall 10
+906 silly preinstall ms@0.7.3 D:\projects\SpringMusic\cart\node_modules\.staging\ms-5befefb2
+907 info lifecycle ms@0.7.3~preinstall: ms@0.7.3
+908 silly preinstall debug@2.6.4 D:\projects\SpringMusic\cart\node_modules\.staging\debug-be778e4a
+909 info lifecycle debug@2.6.4~preinstall: debug@2.6.4
+910 silly preinstall unpipe@1.0.0 D:\projects\SpringMusic\cart\node_modules\.staging\unpipe-6256ce8d
+911 info lifecycle unpipe@1.0.0~preinstall: unpipe@1.0.0
+912 silly preinstall finalhandler@1.0.2 D:\projects\SpringMusic\cart\node_modules\.staging\finalhandler-131d2533
+913 info lifecycle finalhandler@1.0.2~preinstall: finalhandler@1.0.2
+914 silly preinstall utils-merge@1.0.0 D:\projects\SpringMusic\cart\node_modules\.staging\utils-merge-a0f42690
+915 info lifecycle utils-merge@1.0.0~preinstall: utils-merge@1.0.0
+916 silly preinstall vary@1.1.1 D:\projects\SpringMusic\cart\node_modules\.staging\vary-35a1d33b
+917 info lifecycle vary@1.1.1~preinstall: vary@1.1.1
+918 silly preinstall express@4.15.0 D:\projects\SpringMusic\cart\node_modules\.staging\express-3d1e84a8
+919 info lifecycle express@4.15.0~preinstall: express@4.15.0
+920 silly preinstall express-myconnection@1.0.4 D:\projects\SpringMusic\cart\node_modules\.staging\express-myconnection-8c0b7cb4
+921 info lifecycle express-myconnection@1.0.4~preinstall: express-myconnection@1.0.4
+922 silly preinstall mysql@2.13.0 D:\projects\SpringMusic\cart\node_modules\.staging\mysql-3e046d8c
+923 info lifecycle mysql@2.13.0~preinstall: mysql@2.13.0
+924 silly preinstall secure-random-string@1.0.0 D:\projects\SpringMusic\cart\node_modules\.staging\secure-random-string-e4849ee3
+925 info lifecycle secure-random-string@1.0.0~preinstall: secure-random-string@1.0.0
+926 silly lifecycle ms@0.7.3~preinstall: no script for preinstall, continuing
+927 silly lifecycle debug@2.6.4~preinstall: no script for preinstall, continuing
+928 silly lifecycle unpipe@1.0.0~preinstall: no script for preinstall, continuing
+929 silly lifecycle finalhandler@1.0.2~preinstall: no script for preinstall, continuing
+930 silly lifecycle utils-merge@1.0.0~preinstall: no script for preinstall, continuing
+931 silly lifecycle vary@1.1.1~preinstall: no script for preinstall, continuing
+932 silly lifecycle express@4.15.0~preinstall: no script for preinstall, continuing
+933 silly lifecycle express-myconnection@1.0.4~preinstall: no script for preinstall, continuing
+934 silly lifecycle mysql@2.13.0~preinstall: no script for preinstall, continuing
+935 silly lifecycle secure-random-string@1.0.0~preinstall: no script for preinstall, continuing
+936 silly doReverseSerial remove 0
+937 silly doSerial move 0
+938 silly doSerial finalize 10
+939 silly finalize D:\projects\SpringMusic\cart\node_modules\finalhandler\node_modules\ms
+940 silly finalize D:\projects\SpringMusic\cart\node_modules\finalhandler\node_modules\debug
+941 silly finalize D:\projects\SpringMusic\cart\node_modules\unpipe
+942 silly finalize D:\projects\SpringMusic\cart\node_modules\finalhandler
+943 verbose unlock done using C:\Users\root\AppData\Roaming\npm-cache\_locks\staging-671583abab9765bf.lock for D:\projects\SpringMusic\cart\node_modules\.staging
+944 silly rollbackFailedOptional Starting
+945 silly rollbackFailedOptional Finishing
+946 silly runTopLevelLifecycles Finishing
+947 silly install printInstalled
+948 verbose stack Error: EPERM: operation not permitted, rename 'D:\projects\SpringMusic\cart\node_modules\finalhandler' -> 'D:\projects\SpringMusic\cart\node_modules\.finalhandler.DELETE'
+948 verbose stack     at moveAway (D:\apps\nodejs\node_modules\npm\lib\install\action\finalize.js:38:5)
+948 verbose stack     at destStatted (D:\apps\nodejs\node_modules\npm\lib\install\action\finalize.js:27:7)
+948 verbose stack     at FSReqWrap.oncomplete (fs.js:123:15)
+948 verbose stack
+948 verbose stack Error: EPERM: operation not permitted, rename 'D:\projects\SpringMusic\cart\node_modules\finalhandler' -> 'D:\projects\SpringMusic\cart\node_modules\.finalhandler.DELETE'
+948 verbose stack     at Error (native)
+949 verbose cwd D:\projects\SpringMusic\cart
+950 error Windows_NT 10.0.14393
+951 error argv "D:\\apps\\nodejs\\node.exe" "D:\\apps\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+952 error node v6.9.1
+953 error npm  v3.10.8
+954 error path D:\projects\SpringMusic\cart\node_modules\finalhandler
+955 error code EPERM
+956 error errno -4048
+957 error syscall rename
+958 error Error: EPERM: operation not permitted, rename 'D:\projects\SpringMusic\cart\node_modules\finalhandler' -> 'D:\projects\SpringMusic\cart\node_modules\.finalhandler.DELETE'
+958 error     at moveAway (D:\apps\nodejs\node_modules\npm\lib\install\action\finalize.js:38:5)
+958 error     at destStatted (D:\apps\nodejs\node_modules\npm\lib\install\action\finalize.js:27:7)
+958 error     at FSReqWrap.oncomplete (fs.js:123:15)
+958 error
+958 error Error: EPERM: operation not permitted, rename 'D:\projects\SpringMusic\cart\node_modules\finalhandler' -> 'D:\projects\SpringMusic\cart\node_modules\.finalhandler.DELETE'
+958 error     at Error (native)
+958 error  { Error: EPERM: operation not permitted, rename 'D:\projects\SpringMusic\cart\node_modules\finalhandler' -> 'D:\projects\SpringMusic\cart\node_modules\.finalhandler.DELETE'
+958 error     at moveAway (D:\apps\nodejs\node_modules\npm\lib\install\action\finalize.js:38:5)
+958 error     at destStatted (D:\apps\nodejs\node_modules\npm\lib\install\action\finalize.js:27:7)
+958 error     at FSReqWrap.oncomplete (fs.js:123:15)
+958 error
+958 error Error: EPERM: operation not permitted, rename 'D:\projects\SpringMusic\cart\node_modules\finalhandler' -> 'D:\projects\SpringMusic\cart\node_modules\.finalhandler.DELETE'
+958 error     at Error (native) parent: 'cartjs' }
+959 error Please try running this command again as root/Administrator.
+960 verbose exit [ -4048, true ]
