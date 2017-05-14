@@ -1,0 +1,15 @@
+{
+  "name": "cartjs",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www.js"
+  },
+  "dependencies": {
+    "express": "~4.15.2",
+    "morgan": "~1.8.1",
+    "mysql": "2.13.0",
+    "instana-nodejs-sensor": "1.25.0",
+    "secure-random-string": "1.0.0"
+  }
+}

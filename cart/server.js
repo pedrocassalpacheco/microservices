@@ -1,4 +1,17 @@
-var instana = require('instana-nodejs-sensor')();
+const instana = require('instana-nodejs-sensor');
+
+// Always initialize the sensor as the first module inside the application.
+instana({
+    tracing: {
+        enabled: true
+    }
+});
+
+const opentracing = require('opentracing');
+
+opentracing.initGlobalTracer(instana.opentracing.createTracer());
+const tracer = opentracing.globalTracer();
+
 var express = require('express');
 var express_connection = require('express-myconnection');
 var mysql = require('mysql');
@@ -29,6 +42,18 @@ var kafka = require('kafka-node'),
 
 }
 */
+
+function logErrorToInstana(err) {
+
+    var spanContext = instana.opentracing.getCurrentlyActiveInstanaSpanContext();
+
+    var bad = tracer.startSpan('Exception:' + err.message, {childOf: spanContext});
+    bad.setTag(opentracing.Tags.ERROR, true);
+    bad.setTag('Error:', err);
+    bad.setTag('Stack Trace:', err.stackTrace);
+    bad.finish();
+
+}
 
 function remote_call() {
   var options = {
@@ -77,6 +102,11 @@ app.get('/', function (req, res) {
       acquireTimeout: 100,
       port: 3306,
       database: 'socksdb'
+  }, function(err) {
+    console.error("Error captured by query");
+    console.error(err);
+    res.status(500).send(err);
+    return;
   });
 
   srs({length: 20}, function(err, sr) {
@@ -85,8 +115,10 @@ app.get('/', function (req, res) {
     var query = connection.query("INSERT INTO tag set ? ", pst, function (err, results) {
 
         if (err) {
-            console.log(err);
-            res.status(500).send(err);
+            logErrorToInstana(err);
+            console.error("Error captured by query");
+            console.error(err);
+           res.status(500).send(err);
         } else {
             console.log(results);
             res.status(200).send("ok");
@@ -98,7 +130,6 @@ app.get('/', function (req, res) {
 
     });
   });
-
 });
 
 app.get('/addtocart', function (req, res) {
@@ -119,7 +150,8 @@ app.get('/addtocart', function (req, res) {
     var query = connection.query("INSERT INTO cart set ? ", pst, function (err, results) {
 
         if (err) {
-            console.log(err);
+            logErrorToInstana(err);
+            console.error(err);
             res.status(500).send(err);
         } else {
             console.log(results);
@@ -141,8 +173,6 @@ app.get('/paymentgateway', function (req, res) {
         host: 'spring-music-mysql',
         user: 'root',
         password: '',
-        requestTimeout: 50,
-        acquireTimeout: 100,
         port: 3306,
         database: 'socksdb'
     });
@@ -151,29 +181,32 @@ app.get('/paymentgateway', function (req, res) {
     connection.query(sql, {}, function (err, results) {
 
         if (err) {
-            console.log(err);
+            logErrorToInstana(err)
+            console.error(err);
             res.status(500).send(err);
             return;
+        } else {
+          console.log(results);
         }
-
-        console.log(results);
     });
 
-    var sql = "truncate cart;"
+    var sql = "trunxcate cart;"
     connection.query(sql, {}, function (err, results) {
 
         if (err) {
+            logErrorToInstana(err)
+            console.error(err);
             res.status(500).send(err);
             return;
+        } else {
+          console.log(results);
+          res.status(200).send("ok");
         }
-        console.log(results);
+
 
     });
 
     connection.end();
-
-    res.status(200).send("ok");
-
 })
 
 var server = app.listen(8080, function () {

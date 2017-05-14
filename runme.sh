@@ -2,7 +2,7 @@
 # Build microservices example
 echo "Make sure you are on the SpringMusic home directory"
 
-docker-compose kill && docker-compose rm -f 
+docker-compose kill && docker-compose rm -f
 
 cd nginx
 docker build -t pedropacheco/spring-music-nginx .

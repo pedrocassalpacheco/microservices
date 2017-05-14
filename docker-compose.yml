@@ -88,7 +88,7 @@ services:
     depends_on:
     - mysql
     hostname: spring-music-cart-3
-
+  
   mongodb:
     image: pedropacheco/spring-music-mongodb
     ports:
