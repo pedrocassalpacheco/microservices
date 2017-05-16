@@ -190,7 +190,7 @@ app.get('/paymentgateway', function (req, res) {
         }
     });
 
-    var sql = "trunxcate cart;"
+    var sql = "truncate cart;"
     connection.query(sql, {}, function (err, results) {
 
         if (err) {
